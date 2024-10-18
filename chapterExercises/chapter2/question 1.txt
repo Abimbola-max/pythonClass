@@ -1,0 +1,11 @@
+x = 2
+y = 3
+print('x =', x)
+print('value of' , x, '+', x, 'is' (x + x))
+print('x = ')
+print((x + y), '=', (y + x))
+
+The first statement implies that we should print the value of x, or the assigned value of x
+The second statement implies that we should print the addition of x in two places that is 2 + 2 = 4
+The first statement implies that x is a str
+The last statement implies that we should print the add of both x and why and also the addition of y and x. The value of the first addition should be equal to the value of the second addition
