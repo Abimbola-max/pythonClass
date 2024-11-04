@@ -2,7 +2,7 @@ for count in range(1, 10):
 	
 	for number in range (1, 10):
 
-	     print(f'{count} * {number} = {count * number}', end='\t    ')
+	     print(number, " * " , count, " = ", number * count);
 	     
 
-	  	
+	 
