@@ -4,15 +4,15 @@ sum = 0
 avearge = 0
 
 while (response != -1):
-	GALLON_USED = float(input("Enter the gallon used: "))
-	MILES_DRIVEN = float(input("Enter the miles driven: "))
+	gallonUsed = float(input("Enter the gallon used: "))
+	milesDriven = float(input("Enter the miles driven: "))
 
-	MILES_GALLON = MILES_DRIVEN / GALLON_USED
-	print(MILES_GALLON)
+	milesGallon = milesDriven / gallonUsed
+	print(milesDriven)
 
-	sum += MILES_DRIVEN
+	sum += milesDriven
 
-	OVERALL_AVEARAGE_MILES_GALLON = sum / MILES_GALLON 
+	overallAverage = sum / milesGallon
 	
 	
 

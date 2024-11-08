@@ -1,11 +1,18 @@
-number = int(input("Enter a five digit number: "))
+number = int(input('Enter a number: '))
 
-firstDigit = number // 10000
-lastDigit = number % 10
+if number // 10000 <= 9 and number // 1000 != 0:
 
-if firstDigit == lastDigit:
-	print(number, 'is a palindrome')
+	first_digit = number // 10000
+	second_digit = (number // 1000) % 10
+	third_digit = (number // 100) % 10
+	fourth_digit = (number // 10) % 10
+	last_digit = number % 10
 
-else:
-	print(number, 'is not a palindrome')
+	if (first_digit == last_digit and second_digit == fourth_digit):
+		print(number, "number is a palindrome")
+	else:
+		print(number, "number is not a palindrome")
+else: 
+	print('Not valid, please enter the correct number.')
 
+	
