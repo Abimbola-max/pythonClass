@@ -7,7 +7,7 @@ outpu:30(2 + 4 + 6 + 8 + 10 = 30)
 """
 
 def get_sum(numbers):
-	for numbers in range(2, 10, 2):
+	for numbers in range():
 		return sum
 
 
