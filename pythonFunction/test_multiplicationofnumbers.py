@@ -17,7 +17,7 @@ class TestMultiplicationOfNumbers(TestCase):
 		expected = 122.4
 		self.assertEqual(actual, expected)
 
-	def test_that_multiplication_of_numbers_returns_exception_with_invalid_input(self):
+	def test_that_multiplication_of_numbers_returns_exception_with_zero_input(self):
 		actual = multiplicationofnumbers.get_multiply(0,1)
 		expected = 0
 		self.assertEqual(actual, expected)
