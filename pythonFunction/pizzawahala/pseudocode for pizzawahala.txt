@@ -1,0 +1,56 @@
+pseudocode for pizzawahala 
+1. prompt the user to enter number of guest
+2. collect input
+3. store as "numberOfGuest"
+4. prompt the user to enter the type of pizza they want to buy 
+5. collect input 
+6. store as "pizzaType"
+7. to determine how many boxes of pizza the customer will buy:
+	a. if guest is greater than 1 or less than 5,
+	the user should go for the sapa size pizza which cost 2500
+
+	b.if guest is greater than 5 or less than 7,
+	the user should go for the small money pizza which cost 2900
+
+	c. if guest is greater than 7 or less than 8,
+	the user should go for the big boys pizza which cost 4000 
+
+	d. if guest is greater than 8,
+	the user should go for the odogwu pizza which cost 5200
+
+8. declare and initialize price to be 1
+
+To get the price to be paid 
+9. if option "a" the price to be paid is:
+	numberOfSlice is equals 4
+	if each slice is 1, the slices should be shared to 4 people 
+	price to be paid equals 2500 multiplied by price
+	
+
+10. if option "b" the price to be paid is:
+	numberOfSlice is equals 6
+	if each slice is 1, the slices should be shared to 6 people 
+	price to be paid equals 2900 multiplied by price
+
+11. if option "c" the price to be paid is:
+	numberOfSlice is equals 8
+	if each slice is 1, the slices should be shared to 8 people 
+	price to be paid equals 4000 multiplied by price
+
+12. if option "d" the price to be paid is:
+	numberOfSlice is equals 12
+	if each slice is 1, the slices should be shared to 12 or more than 12 people 
+	price to be paid equals 5200 multiplied by price
+
+To get the nuber of slices left
+
+13. if number of guest is less than numberOfSlices 
+	slicesLeft = numberOfSlice minus numberOfGuest 
+
+
+
+
+
+
+
+
