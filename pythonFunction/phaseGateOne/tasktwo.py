@@ -19,14 +19,16 @@ display sum
 
 
 
-number = int(input("Enter a number: "))
+number = int(input("Enter a number between 0 and 1000: "))
 
-if number < 1 or number > 1000:
-	print("Enter a correct value")
+while number < 0 or number > 1000:
+    print("Invalid input. Please enter a number between 0 and 1000.")
+    number = int(input("Enter a number between 0 and 1000: "))
 
-firstNumber = int(number // 100)
-secondNumber = int(number // 10) % 10
-thirdNumber = (number % 10)
+first_digit = number // 100  
+second_digit = (number % 100) // 10 
+third_digit = number % 10  
 
-sum = int(firstNumber + secondNumber + thirdNumber)
-print(f"The sum of the number input is: {sum}")
+sum_of_digits = first_digit + second_digit + third_digit
+
+print(f"The sum of the digits of {number} is: {sum_of_digits}")
