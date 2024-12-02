@@ -1,6 +1,6 @@
 import random
 
-def number_quiz():
+def get_answer_after_addition():
 
 	first_number = random.randrange(1, 100)
 	second_number = random.randrange(1, 100)
@@ -15,6 +15,6 @@ def number_quiz():
 	else:
 		print(False)  
 
-number_quiz()        
+get_answer_after_addition()        
         
 	
