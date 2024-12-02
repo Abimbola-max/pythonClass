@@ -1,0 +1,7 @@
+pseudocode 
+prompt and collect the user to enter two integers
+store as "number_one"
+prompt and collect the user to enter two integers
+store as "number_two"
+generate numbers 
+prompt the user to enter sum of the number
