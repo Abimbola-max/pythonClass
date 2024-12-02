@@ -1,11 +1,12 @@
 def  get_details():
 	fullName = input("Enter your name: ")
-        age = input("How old are you?")
+	age = input("How old are you?")
 
 	if (age < 10 or age > 65):
 		print("Sorry, This App Is Not Suitable For Your Age.")
-            	Sys.exit()
-		print()
+		Sys.exit()
+	
+print(get_details())
     	
 def get_last_period_info():
 	lastPeriodDay = input("Enter the first date of your last period: ");
@@ -35,34 +36,35 @@ def  get_gender():
 
 	gender = input("Kindly Enter Your Gender (male/female): ")
 
-	if (gender.equals("F") or gender.equals("M")) 
-			
-	if (gender.equals("F")):
-		print("Hi sis!!")
+	if (gender.equals("F") or gender.equals("M")): 
+		if (gender.equals("F")):
+			print("Hi sis!!")
 
-	elif (gender.equals("M")):
-		print("You are at the right place for your babe or hmm.")
+		elif (gender.equals("M")):
+			print("You are at the right place for your babe or hmm.")
      
-	else:
-		print("Invalid Input. Please Enter 'M' for Male or 'F' for Female.")
+		else:
+			print("Invalid Input. Please Enter 'M' for Male or 'F' for Female.")
             
 	return gender
 	
 def  moodOf():
 	periodMood = input("How do you feel about your period?" + "\n 1. It is a love hate relationship" + "(:(" + "\n2. Embarassed" + ":( " + "\n3. Hate it" + "\n4. We've become friends" + ":)" + "\n>>>")
 
-		match (periodMood):
-			case 1: 
-				print("I get it lol. You are relieved when you see it but can not wait to let it go")
-			case 2: 
-				print("It is normal to feel a bit uncomfortable talking about periods")
-			case 3: 
-				print("You are not alone, many people feel the same way about their periods")
-			case 4: 
-				print("We love to hear it!! WE will hep  you live in harmony with your period by predicting correctly ")
+	match (periodMood):
+		case 1: 
+			print("I get it lol. You are relieved when you see it but can not wait to let it go")
+		case 2: 
+			print("It is normal to feel a bit uncomfortable talking about periods")
+		case 3: 
+			print("You are not alone, many people feel the same way about their periods")
+		case 4: 
+			print("We love to hear it!! WE will hep  you live in harmony with your period by predicting correctly ")
 
-			case _:
-				print("Enter the correct input my guy");
+		case _:
+			print("Enter the correct input my guy");
+
+print(moodOf())
 
 def calculate_estimates():
         
@@ -78,7 +80,7 @@ def calculate_estimates():
 	ovulationMonth = nextPeriodMonth
 	ovulationYear = currentYear
 	if (ovulationDay <= 0): 
-		ovulationMonth--
+		ovulationMonth-=1
 		if (ovulationMonth == 0):
 			ovulationMonth = 12 
 			ovulationYear-=1;
@@ -90,7 +92,7 @@ def calculate_estimates():
 	safePeriodStartMonth = ovulationMonth
 	safePeriodStartYear = ovulationYear
 	if (safePeriodStartDay <= 0): 
-		safePeriodStartMonth--;
+		safePeriodStartMonth-=1;
 		if (safePeriodStartMonth == 0):
 			safePeriodStartMonth = 12
 			safePeriodStartYear-=1 
@@ -104,13 +106,13 @@ def calculate_estimates():
 
 	if (safePeriodEndDay > numberOfDaysInMonth(safePeriodEndYear, safePeriodEndMonth)):
 		safePeriodEndDay -= numberOfDaysInMonth(safePeriodEndYear, safePeriodEndMonth);
-		safePeriodEndMonth++
-		if (safePeriodEndMonth > 12):
-                safePeriodEndMonth = 1
+		safePeriodEndMonth+=1
+	if (safePeriodEndMonth > 12):
+                	safePeriodEndMonth = 1
                 safePeriodEndYear+=1
                 
 print(f"\nYour next period date should be: ", {nextPeriodDay}, "/", 
-                           {nextPeriodMonth} , "/" , {currentYear}, "to", {duration}, "/" + 
+                           {nextPeriodMonth} , "/" , {currentYear}, "to", {duration}, "/" ,
                            {nextPeriodMonth}, "/",  {currentYear})
 print(f"Your estimated ovulation date: " , {ovulationDay} , "/" , 
                            {ovulationMonth} + "/" , {ovulationYear});

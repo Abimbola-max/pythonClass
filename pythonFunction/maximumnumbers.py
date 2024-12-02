@@ -3,7 +3,11 @@ def get_maximum_numbers(numbers: list):
 	largest = numbers
 
 	for count in range(len(numbers)):
+
 		if (numbers[count] > largest):
+
+		if (count > largest):
+
 			largest = numbers
 
 	return largest	

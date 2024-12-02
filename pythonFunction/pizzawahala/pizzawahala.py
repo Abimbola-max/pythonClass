@@ -1,19 +1,33 @@
-def  welcome_message():
-	print("Welcome to Iya Moses Pizza joint!! The best pizza you would ever get and i can bet that!!")
+def  welcome_Message():
+	return "Welcome to Iya Moses Pizza joint!! The best pizza you would ever get and i can bet that"
 
-welcome_message()
-
-
-
+print(welcome_Message())
+	
 def number_Of_Guest():
-	numberOfGuests = int(input("Enter number of birthday guests: "))
 
-	while (numberOfGuests < 1):
-		print("You have entered the wrong input. Please enter a number greater than 1 or equals to 1")
+	try:
+
+
 		numberOfGuests = int(input("Enter number of birthday guests: "))
-	return numberOfGuests
+
+		while (numberOfGuests < 1):
+			print("You have entered the wrong input. Please enter a number greater than 1 or equals to 1")
+			numberOfGuests = int(input("Enter number of birthday guests: "))
+		print(numberOfGuests)
+		number = numberOfGuests
+		return numberOfGuests
+	except ValueError:
+		print("Please enter an integer")
+		number_Of_Guest()
+	
+	
+	
+
+	
+
 
 numberOfGuests = number_Of_Guest()
+print(numberOfGuests)
 
 def type_Of_Pizza():
 
@@ -40,7 +54,7 @@ def type_Of_Pizza():
 				totalPrice = box * price
 
 
-			print(f"You have selected the sapa size pizza\nThe number of boxes you will buy is: {box} \nThe remaining of the slices is: {remaining} \nThe total amount you are paying is: ${totalPrice}\nThank you so much for your patronage!! xx") 
+			return f"You have selected the sapa size pizza\nThe number of boxes you will buy is: {box} \nThe remaining of the slices is: {remaining} \nThe total amount you are paying is: NGN{totalPrice}\nThank you so much for your patronage!! xx"
 
 
 
@@ -65,7 +79,7 @@ def type_Of_Pizza():
 
 				
 
-			print(f"You have selected the sapa size pizza\nThe number of boxes you will buy is: {secondBox} \nThe remaining of the slices is: {secondRemaining} \nThe total amount you are paying is: ${secondTotalPrice}\nThank you so much for your patronage!! xx") 
+			return f"You have selected the small money pizza\nThe number of boxes you will buy is: {secondBox} \nThe remaining of the slices is: {secondRemaining} \nThe total amount you are paying is: NGN{secondTotalPrice}\nThank you so much for your patronage!! xx" 
 				
 		case 3:
 			thirdTotalSlice = 8
@@ -85,7 +99,7 @@ def type_Of_Pizza():
 				thirdRemaining = numberOfGuests % thirdTotalSlice
 				thirdTotalPrice = thirdBox * thirdPrice
 
-			print(f"You have selected the sapa size pizza\nThe number of boxes you will buy is: {thirdBox} \nThe remaining of the slices is: {thirdRemaining} \nThe total amount you are paying is: ${thirdTotalPrice}\nThank you so much for your patronage!! xx")
+			return f"You have selected the big boys pizza\nThe number of boxes you will buy is: {thirdBox} \nThe remaining of the slices is: {thirdRemaining} \nThe total amount you are paying is: NGN{thirdTotalPrice}\nThank you so much for your patronage!! xx"
 
 		case 4:
 			lastTotalSlice = 12
@@ -105,10 +119,11 @@ def type_Of_Pizza():
 				lastTotalPrice = lastBox * lastPrice;
 
 
-			print(f"You have selected the sapa size pizza\nThe number of boxes you will buy is: {lastBox} \nThe remaining of the slices is: {lastRemaining} \nThe total amount you are paying is: ${lastTotalPrice}\nThank you so much for your patronage!! xx")
+			return f"You have selected the odogwu pizza\nThe number of boxes you will buy is: {lastBox} \nThe remaining of the slices is: {lastRemaining} \nThe total amount you are paying is: NGN{lastTotalPrice}\nThank you so much for your patronage!! xx"
 
 
 		case _:
 			print("You have entered an invalid input")
 
 
+print(type_Of_Pizza())

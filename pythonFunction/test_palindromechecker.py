@@ -1,9 +1,6 @@
 from unittest import TestCase
 import palindromechecker
 
-
-
-
 class TestReversedNumber(TestCase):
 	def test_that_palindrome_checker_exists(self):
 		palindromechecker.is_palindrome(12234)
