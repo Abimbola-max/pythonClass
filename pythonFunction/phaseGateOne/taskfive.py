@@ -58,19 +58,19 @@ def get_future_date():
 	
 
 	if number == 0:	
-		print("Today is Sunday")
+		print("and the future day is sunday")
 	elif number == 1:	
-		print("Today is Monday")
+		print("and the future day is Monday")
 	if number == 2:	
-		print("Today is Tuesday")
+		print("and the future day is Tuesday")
 	if number == 3:	
-		print("Today is Wednesday")
+		print("and the future day is Wednesday")
 	if number == 4:	
-		print("Today is Thursday")
+		print("and the future day is Thursday")
 	if number == 5:	
-		print("Today is Friday")
+		print("and the future day is Friday")
 	if number == 6:	
-		print("Today is Saturday")
+		print("and the future day is Saturday")
 
 	
 get_future_date()
