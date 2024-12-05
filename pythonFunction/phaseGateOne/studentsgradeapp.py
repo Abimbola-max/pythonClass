@@ -21,3 +21,87 @@ def for_all_input():
         print(f"The average grade for student {count + 1} is: {average}")
 
 for_all_input()
+
+def print_table(no_of_all_subjects, score, total, average):
+
+	#first_function = for_all_input()
+	print("STUDENT SCORE TABLE")
+	print("-----------------------------------------------------")
+	print("subject", "score", "Total", "Average", "position")
+	
+	
+	for subject in no_of_all_subjects:
+		print(subject, "\t", score[subject], "\t", total[subject], "\t", average[subject], "\t", "-") 
+
+	print("-----------------------------------------------------")
+
+
+
+
+	
+
+print_table(number_of_students, no_of_all_subjects, score, total, average)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
