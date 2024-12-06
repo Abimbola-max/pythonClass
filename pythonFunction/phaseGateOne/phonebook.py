@@ -46,14 +46,14 @@ def remove_contact():
 	name_to_remove = input("Enter the name of of the contact to remove: ")
 	contact_removed = False
 
-	for contact in len(contacts):
+	for contact in (len(contacts)):
 		if contacts[contact]['name'] == name_to_remove:
 			del contacts[contact]
 			contact_removed = True 
+			print("You have successfully removed", name_to_remove)
 			break
-	if contact_removed:
-		print("You have successfully removed", name_to_remove)	
-	else:
+
+	if not contact_removed:
 		print("We could not find contact")
 
 
@@ -67,8 +67,9 @@ def find_contact_by_phone():
 			print("contact found ooo", contact)
 			contact_found = True
 			break
-	print("contact with phone number", phone_no_to_find, "not found")
 
+	if not contact_found:
+        print("Contact with phone number", phone_no_to_find, "not found.")
 
 
 def find_contact_by_first_name():
@@ -118,7 +119,9 @@ def edit_contact():
 			print("Contact not found.")
 
 program_running = True
+
 while program_running:
+
 	options = get_options()
     
 	match(options):
