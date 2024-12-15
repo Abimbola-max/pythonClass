@@ -25,8 +25,10 @@ def input_product_details():
 print(input_product_details())
 
 def calculate_and_display_totals(product_names, product_prices, product_quantities):
+
 	total = 0
 	for index in range(len(product_names)):
+
 		total += product_prices[index] * product_quantities[index]
 
 	customer_name = input("What is your name? ")
