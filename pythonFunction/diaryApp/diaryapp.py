@@ -1,3 +1,9 @@
+import datetime
+
+diary_entries = {}
+locked = False
+
+
 def welcome():
 
 	print("Welcome To AppByMeDiary\n")
@@ -6,13 +12,29 @@ def welcome():
 def create_diary():
 
 	global password
+	global locked
 
-	user_name = input("Enter your username: ")
+	checks = True
+	
+	while(checks):
 
-	password = input("Enter a password: ") 
+		user_name = input("Enter your username: ")
+
+		password = input("Enter a password: ")
+
+		confirm_password = input("Enter a password: ")
+
+		if (password == confirm_password):
+			print("You have successfully created a diary account!")
+		else:
+			print("Password does not match, Please try again.")
 
 def lock_diary():
 
+	global locked
+	if not locked:
+		print("Diary is locked.")
+		return
 
 	try:
 
@@ -28,18 +50,46 @@ def lock_diary():
 
 def unlock_diary():
 
-
+	global locked
+	
 	try:
+		if locked:
 
-		password_to_unlock = input("Enter password to lock diary: ")
+			password_to_unlock = input("Enter password to lock diary: ")
 
-		if (password_to_unlock == password):
-			print("You have successfully unlocked your diary.")
+			if (password_to_unlock == password):
+				locked = False
+				print("You have successfully unlocked your diary.")
+			else:
+				print("Incorrect password.") 
 		else:
-			print("Incorrect password.") 
+			print("Diary is already unlocked.")
 
 	except ValueError:
 		print("Error!!")
+
+def add_entry():
+
+	global locked
+	global diary_entries
+	if not locked:
+		print("Diary is locked, unlock the diary to add entry")
+		return
+
+	entry_title = input("Enter a title for your diary: ")
+	entry_date = datetime.date.today().strftime("%Y-%m-%d")
+	entry_text = input("Enter your secret here, let's start:\n")
+	entry_text = diary_entries[(entry_date, entry_title)]
+	print("Entry added successfully!")
+
+def view_entries():
+
+	global locked
+	if not locked:
+		print("Diary is locked, unlock the diary to view entry")
+		return
+
+
 		
 
 
@@ -64,11 +114,11 @@ def app_menu():
 				case 2: 
 					lock_diary()
 				case 3: 
-					unlockDiary();break;
+					unlock_diary();break;
 				case 4:
-					updateDiary(); break;
+					add_diary(); break;
 				case 5: 
-					findEntry(); break;
+					view_entry(); break;
 				case 6:
                     			print("Exiting the diary...") 
 				case _:
