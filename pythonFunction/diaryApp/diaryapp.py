@@ -11,23 +11,17 @@ def welcome():
 
 def create_diary():
 
-	global password
-	global locked
 
-	checks = True
-	
-	while(checks):
+	user_name = input("Enter your username: ")
 
-		user_name = input("Enter your username: ")
+	password = input("Enter a password: ")
 
-		password = input("Enter a password: ")
+	confirm_password = input("Confirm password: ")
 
-		confirm_password = input("Enter a password: ")
-
-		if (password == confirm_password):
-			print("You have successfully created a diary account!")
-		else:
-			print("Password does not match, Please try again.")
+	if (password == confirm_password):
+		print("You have successfully created a diary account!")
+	else:
+		print("Password does not match, Please try again.")
 
 def lock_diary():
 
@@ -70,8 +64,6 @@ def unlock_diary():
 
 def add_entry():
 
-	global locked
-	global diary_entries
 	if not locked:
 		print("Diary is locked, unlock the diary to add entry")
 		return
@@ -82,15 +74,15 @@ def add_entry():
 	entry_text = diary_entries[(entry_date, entry_title)]
 	print("Entry added successfully!")
 
-def view_entries():
+"""def view_entries():
 
-	global locked
+	
 	if not locked:
 		print("Diary is locked, unlock the diary to view entry")
 		return
-
-
-		
+	
+	if 
+"""	
 
 
 def app_menu():
@@ -103,7 +95,7 @@ def app_menu():
 
 		try:
 
-			choice = int(input("1. Create Diary\n2. Lock Diary\n3. Unlock Diary\n4. Update Diary\n5. Find Entry\n6. Exit\n Please select one option >>>>> "))
+			choice = int(input("1. Create Diary\n2. Lock Diary\n3. Unlock Diary\n4. Add Entry\n5. View Entry\n6. Exit\n Please select one option >>>>> "))
 
 			print()
         			
@@ -114,11 +106,11 @@ def app_menu():
 				case 2: 
 					lock_diary()
 				case 3: 
-					unlock_diary();break;
+					unlock_diary()
 				case 4:
-					add_diary(); break;
+					add_diary()
 				case 5: 
-					view_entry(); break;
+					view_entry()
 				case 6:
                     			print("Exiting the diary...") 
 				case _:
