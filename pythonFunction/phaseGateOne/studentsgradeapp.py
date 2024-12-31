@@ -135,7 +135,7 @@ def class_summary(student_data, number_of_subjects, number_of_students):
 
     highest_total = 0
     highest_student = ""
-    lowest_total = float('inf')
+    lowest_total = 10000
     lowest_student = ""
     class_total_score = 0
 
