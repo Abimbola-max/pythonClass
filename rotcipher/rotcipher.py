@@ -1,5 +1,3 @@
-
-
 def get_encrypted_text(words, shift_value):
     encrypted_text = ""
     for char in words:
