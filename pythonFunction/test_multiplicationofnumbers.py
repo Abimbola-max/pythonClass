@@ -31,11 +31,4 @@ class TestMultiplicationOfNumbers(TestCase):
 		self.assertRaises(TypeError, multiplicationofnumbers.get_multiply, "bmbola")
 
 
-		
-
-
-
-
-
-
 
