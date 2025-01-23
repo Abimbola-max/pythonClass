@@ -38,13 +38,13 @@ new_data = {"city": "New York", "age": 26}
 
 for key, value in new_data.items():
 	my_dict[key] = value
-print(my_dict)
+print("my dict is" , my_dict)
 
 nested_dict = {"person1" : {"name": "Alice", "age": 25}, "person2": {"name": "Bob", "age": 30}}
 
 nested_dict["person1"]["city"] = "New York"
 
-print(nested_dict)
+print("the nested dictionary is ",nested_dict)
 
 
 new_data = {"city": "Los Angeles", "profession": "engineer"}
@@ -52,6 +52,8 @@ new_data = {"city": "Los Angeles", "profession": "engineer"}
 nested_dict["person2"].update(new_data)
 
 print(nested_dict)
+
+
 
 
 

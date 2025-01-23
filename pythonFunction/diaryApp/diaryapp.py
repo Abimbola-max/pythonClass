@@ -43,8 +43,6 @@ def lock_diary():
 		print("Error!!")
 
 def unlock_diary():
-
-	global locked
 	
 	try:
 		if locked:
@@ -108,7 +106,7 @@ def app_menu():
 				case 3: 
 					unlock_diary()
 				case 4:
-					add_diary()
+					add_entry()
 				case 5: 
 					view_entry()
 				case 6:
