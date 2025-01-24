@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b322606e-8db7-40b6-ac90-12170208b3db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rotcipher/rotcipher.py" beforeDir="false" afterPath="$PROJECT_DIR$/rotcipher/rotcipher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,27 +31,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_rot13cipher.RotCipher.executor": "Run",
-    "Python tests.Python tests for test_rot_cipher.RotCipher.executor": "Run",
-    "Python tests.Python tests for test_rotcipher.RotCipher.executor": "Run",
-    "Python tests.Python tests for test_rotcipher.TestRotCipher.executor": "Run",
-    "Python tests.Python tests for test_rotcipher.TestRotCipher.test_rot_cipher_exist.executor": "Run",
-    "Python tests.Python tests for test_rotcipher.TestRotCipher.test_that_rot_cipher_returns_correct_text.executor": "Run",
-    "Python.rot_cipher.executor": "Run",
-    "Python.rotcipher.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_rot13cipher.RotCipher.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_rot_cipher.RotCipher.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_rotcipher.RotCipher.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_rotcipher.TestRotCipher.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_rotcipher.TestRotCipher.test_rot_cipher_exist.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_rotcipher.TestRotCipher.test_that_rot_cipher_returns_correct_text.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rot_cipher.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rotcipher.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python tests.Python tests for test_rotcipher.TestRotCipher">
     <configuration name="rotcipher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
@@ -169,6 +168,11 @@
       <updated>1737626461043</updated>
       <workItem from="1737626462392" duration="8471000" />
       <workItem from="1737635078504" duration="6203000" />
+      <workItem from="1737716115351" duration="249000" />
+      <workItem from="1737716369444" duration="8000" />
+      <workItem from="1737716384337" duration="57000" />
+      <workItem from="1737723837028" duration="9000" />
+      <workItem from="1737723882603" duration="14000" />
     </task>
     <servers />
   </component>
