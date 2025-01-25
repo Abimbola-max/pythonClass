@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a74f02a-ab09-42a6-b856-83a926c96b40" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/arraymethods/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arraymethods/.idea/PythonProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arraymethods/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arraymethods/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arraymethods/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arraymethods/testandcode/myarraymethod.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arraymethods/testandcode/test_arraymethod.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myarraymethods/test_myarraymethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/myarraymethods/test_myarraymethods.py" afterDir="false" />
-    </list>
+    <list default="true" id="4a74f02a-ab09-42a6-b856-83a926c96b40" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737768400002</updated>
-      <workItem from="1737768401029" duration="1323000" />
+      <workItem from="1737768401029" duration="1676000" />
     </task>
     <servers />
   </component>

@@ -33,4 +33,4 @@ class TestMyArrayMethod(unittest.TestCase):
         array.add_element("8")
 
         self.assertFalse(array.is_empty())
-        self.assertEquals()
+        self.assertEquals(.....)
