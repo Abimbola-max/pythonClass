@@ -31,6 +31,23 @@ class TestMyArrayMethod(unittest.TestCase):
         array = MyArrayMethod(4)
         array.add_element("34")
         array.add_element("8")
+        array.remove_element("8")
 
         self.assertFalse(array.is_empty())
-        self.assertEquals(.....)
+        self.assertEqual(1, array.get_size())
+
+    def test_that_my_array_method_can_remove_element_and_return_true_if_is_empty(self):
+        array = MyArrayMethod(4)
+        array.add_element("7")
+        array.remove_element("7")
+        self.assertTrue(array.is_empty())
+
+    def test_that_my_array_method_can_clear_all_elements_in_array_and_return_true_for_is_empty(self):
+        array = MyArrayMethod(4)
+        array.add_element("7")
+        array.add_element("bibi")
+
+        array.clear()
+        self.assertTrue(array.is_empty())
+
+    def test_that

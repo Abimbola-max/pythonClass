@@ -38,6 +38,25 @@ class MyArrayMethod:
                 return index_counter
         return -1
 
+    def get_size(self):
+        return self.size
+
+    def remove_element(self, element):
+        for index_counter in range(self.size):
+            if self.array[index_counter] == element:
+                self.size -= 1
+        return "Not Found"
+
+    def clear(self):
+        self.array = [None] * self.size
+        self.size = 0
+
+
+
+
+
+
+
 
 
 
