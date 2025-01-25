@@ -26,3 +26,11 @@ class TestMyArrayMethod(unittest.TestCase):
         array.insert_index("4", 1)
         self.assertEqual(2, array.get_index_of_an_element("8"))
         self.assertFalse(array.is_empty())
+
+    def test_that_my_array_method_can_remove_element_at_a_particular_index_and_return_size(self):
+        array = MyArrayMethod(4)
+        array.add_element("34")
+        array.add_element("8")
+
+        self.assertFalse(array.is_empty())
+        self.assertEquals()
