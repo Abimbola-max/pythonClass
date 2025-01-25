@@ -51,6 +51,13 @@ class MyArrayMethod:
         self.array = [None] * self.size
         self.size = 0
 
+    def count(self, element):
+        for count in range(self.size, -1, -1):
+            if self.array[count] == element:
+                return count
+        return 0
+
+
 
 
 

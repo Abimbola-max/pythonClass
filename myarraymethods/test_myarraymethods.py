@@ -50,4 +50,13 @@ class TestMyArrayMethod(unittest.TestCase):
         array.clear()
         self.assertTrue(array.is_empty())
 
-    def test_that
+    def test_that_my_array_method_can_count_the_number_of_occurrence_of_an_element(self):
+        array = MyArrayMethod(7)
+        array.add_element("7")
+        array.add_element("bibi")
+        array.add_element("bibi")
+        array.add_element("bibi")
+
+        self.assertEqual(3, array.count("bibi"))
+
+
