@@ -13,3 +13,5 @@ class MySetTestCase(unittest.TestCase):
         array_method = MySet(6)
         array_method.add_element("34")
         self.assertFalse(array_method.is_empty())
+
+    def test
