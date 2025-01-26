@@ -34,7 +34,7 @@ class TestMyArrayMethod(unittest.TestCase):
         array.remove_element("8")
 
         self.assertFalse(array.is_empty())
-        self.assertEqual(1, array.get_size())
+        self.assertEqual(1, array.len())
 
     def test_that_my_array_method_can_remove_element_and_return_true_if_is_empty(self):
         array = MyArrayMethod(4)

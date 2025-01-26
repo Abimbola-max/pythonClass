@@ -38,7 +38,7 @@ class MyArrayMethod:
                 return index_counter
         return -1
 
-    def get_size(self):
+    def len(self):
         return self.size
 
     def remove_element(self, element):

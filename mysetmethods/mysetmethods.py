@@ -12,6 +12,14 @@ class MySet:
     def add_element(self, element):
         self.array_method.add_element(element)
 
+    def len(self):
+        return self.array_method.len()
+
+    def remove_element(self, element):
+        self.array_method.remove_element(element)
+
+
+
 
 
 

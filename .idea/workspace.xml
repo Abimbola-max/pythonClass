@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a74f02a-ab09-42a6-b856-83a926c96b40" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarraymethods/myarraymethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/myarraymethods/myarraymethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarraymethods/test_myarraymethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/myarraymethods/test_myarraymethods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysetmethods/mysetmethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysetmethods/mysetmethods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysetmethods/test_mysetmethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysetmethods/test_mysetmethods.py" afterDir="false" />
     </list>
@@ -42,6 +43,9 @@
     "Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_remove_element_at_a_particular_index_and_return_size.executor": "Run",
     "Python tests.Python tests for test_mysetmethods.MySetTestCase.executor": "Run",
     "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_add_items.executor": "Run",
+    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_be_return_length_of_my_set.executor": "Run",
+    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_remove_elements_and_return_size.executor": "Run",
+    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_exist.executor": "Run",
     "Python tests.Python tests in test_myarraymethods.py.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -54,39 +58,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_exist">
-    <configuration name="Python tests for test_myarraymethods.TestMyArrayMethod" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonClass" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myarraymethods" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_myarraymethods.TestMyArrayMethod&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_count_the_number_of_occurrence_of_an_element" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonClass" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myarraymethods" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_count_the_number_of_occurrence_of_an_element&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_remove_elements_and_return_size">
     <configuration name="Python tests for test_mysetmethods.MySetTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
@@ -119,6 +91,38 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_be_return_length_of_my_set" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysetmethods" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_be_return_length_of_my_set&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_remove_elements_and_return_size" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysetmethods" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_remove_elements_and_return_size&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_exist" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
@@ -137,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_remove_elements_and_return_size" />
+        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_be_return_length_of_my_set" />
         <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_exist" />
         <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_add_items" />
         <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase" />
-        <item itemvalue="Python tests.Python tests for test_myarraymethods.TestMyArrayMethod" />
-        <item itemvalue="Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_count_the_number_of_occurrence_of_an_element" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +166,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737768400002</updated>
       <workItem from="1737768401029" duration="6486000" />
-      <workItem from="1737870360930" duration="955000" />
+      <workItem from="1737870360930" duration="1714000" />
     </task>
     <servers />
   </component>
@@ -170,6 +174,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1737871317978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysetmethods" />
+    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1737872086601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysetmethods" />
   </component>
 </project>
