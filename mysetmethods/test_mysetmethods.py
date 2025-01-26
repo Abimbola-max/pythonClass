@@ -27,3 +27,40 @@ class MySetTestCase(unittest.TestCase):
         array_method.add_element("34")
         array_method.remove_element("34")
         self.assertEqual(0, array_method.len())
+
+        array_method.add_element("45")
+        array_method.add_element("bibi")
+        array_method.remove_element("bibi")
+        self.assertEqual(1, array_method.len())
+
+    def test_that_my_set_methods_can_insert_element_at_a_particular_index(self):
+        array_method = MySet(6)
+        array_method.add_element("34")
+        array_method.add_element("45")
+        array_method.add_element("bibi")
+        array_method.insert_element_at("tayo", 1)
+
+        self.assertEqual(4, array_method.len())
+        self.assertFalse(array_method.is_empty())
+
+    def test_that_my_set_method_can_get_index_of_an_element(self):
+        array_method = MySet(6)
+        array_method.add_element("34")
+        array_method.add_element("45")
+        array_method.add_element("bibi")
+
+        self.assertEqual(2, array_method.get_index_of("bibi"))
+        self.assertEqual(0, array_method.get_index_of("34"))
+
+    def test_that_my_set_method_can_clear_all_items_in_set_and_return_size_to_nothing(self):
+        array_method = MySet(6)
+        array_method.add_element("bolu")
+        array_method.add_element("abefe")
+        array_method.add_element("bibi")
+
+        array_method.clear()
+        self.assertEqual(0, array_method.len())
+        self.assertTrue(array_method.is_empty())
+
+
+

@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a74f02a-ab09-42a6-b856-83a926c96b40" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/myarraymethods/myarraymethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/myarraymethods/myarraymethods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myarraymethods/test_myarraymethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/myarraymethods/test_myarraymethods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysetmethods/mysetmethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysetmethods/mysetmethods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysetmethods/test_mysetmethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysetmethods/test_mysetmethods.py" afterDir="false" />
     </list>
@@ -42,8 +40,11 @@
     "Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_remove_element_and_return_true_if_is_empty.executor": "Run",
     "Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_remove_element_at_a_particular_index_and_return_size.executor": "Run",
     "Python tests.Python tests for test_mysetmethods.MySetTestCase.executor": "Run",
+    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_clear_all_items_in_set.executor": "Run",
+    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_get_index_of_an_element.executor": "Run",
     "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_add_items.executor": "Run",
     "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_be_return_length_of_my_set.executor": "Run",
+    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_insert_element_at_a_particular_index.executor": "Run",
     "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_remove_elements_and_return_size.executor": "Run",
     "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_exist.executor": "Run",
     "Python tests.Python tests in test_myarraymethods.py.executor": "Run",
@@ -58,7 +59,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_remove_elements_and_return_size">
+  <component name="RunManager" selected="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_clear_all_items_in_set">
     <configuration name="Python tests for test_mysetmethods.MySetTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
@@ -75,7 +76,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_add_items" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_clear_all_items_in_set" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,11 +88,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_add_items&quot;" />
+      <option name="_new_target" value="&quot;test_mysetmethods.MySetTestCase.test_that_my_set_method_can_clear_all_items_in_set&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_be_return_length_of_my_set" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_get_index_of_an_element" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,7 +104,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_be_return_length_of_my_set&quot;" />
+      <option name="_new_target" value="&quot;test_mysetmethods.MySetTestCase.test_that_my_set_method_can_get_index_of_an_element&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_insert_element_at_a_particular_index" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysetmethods" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_insert_element_at_a_particular_index&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -123,29 +140,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_exist" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonClass" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysetmethods" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_mysetmethods.MySetTestCase.test_that_my_set_methods_exist&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_remove_elements_and_return_size" />
-        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_be_return_length_of_my_set" />
-        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_exist" />
-        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_add_items" />
+        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_clear_all_items_in_set" />
         <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase" />
+        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_get_index_of_an_element" />
+        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_insert_element_at_a_particular_index" />
+        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_remove_elements_and_return_size" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737768400002</updated>
       <workItem from="1737768401029" duration="6486000" />
-      <workItem from="1737870360930" duration="1714000" />
+      <workItem from="1737870360930" duration="3326000" />
     </task>
     <servers />
   </component>
@@ -174,6 +175,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1737872086601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysetmethods" />
+    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1737873680570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysetmethods" />
   </component>
 </project>
