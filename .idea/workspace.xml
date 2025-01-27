@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4a74f02a-ab09-42a6-b856-83a926c96b40" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myarraymethods/myqueuemethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/myarraymethods/myqueuemethods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysetmethods/mysetmethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysetmethods/mysetmethods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysetmethods/test_myqueuemethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysetmethods/test_myqueuemethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarraymethods/myarraymethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/myarraymethods/datastructure/myarraymethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarraymethods/myqueuemethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/myarraymethods/datastructure/myqueuemethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarraymethods/test_myarraymethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/myarraymethods/datastructure/test_myarraymethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysetmethods/mysetmethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysetmethods/datastructure/mysetmethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysetmethods/test_myqueuemethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysetmethods/datastructure/test_myqueuemethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysetmethods/test_mysetmethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysetmethods/datastructure/test_mysetmethods.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +39,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for datastructure.test_myarraymethods.TestMyArrayMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for datastructure.test_mysetmethods.MySetTestCase.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_clear_all_elements_in_array_and_return_true_for_is_empty.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_count_the_number_of_occurrence_of_an_element.executor&quot;: &quot;Run&quot;,
@@ -62,8 +67,24 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for test_mysetmethods.MySetTestCase">
-    <configuration name="Python tests for test_myqueuemethods.MyQueueMethodTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for datastructure.test_myarraymethods.TestMyArrayMethod">
+    <configuration name="Python tests for datastructure.test_myarraymethods.TestMyArrayMethod" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myarraymethods" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;datastructure.test_myarraymethods.TestMyArrayMethod&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for datastructure.test_myqueuemethods.MyQueueMethodTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,7 +96,71 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_myqueuemethods.MyQueueMethodTest&quot;" />
+      <option name="_new_target" value="&quot;datastructure.test_myqueuemethods.MyQueueMethodTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for datastructure.test_mysetmethods.MySetTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysetmethods" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;datastructure.test_mysetmethods.MySetTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for datastructure.test_mysetmethods.MySetTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysetmethods" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;datastructure.test_mysetmethods.MySetTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for datastructure.test_mysetmethods.MySetTestCase.test_that_my_set_method_can_get_index_of_an_element" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysetmethods" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;datastructure.test_mysetmethods.MySetTestCase.test_that_my_set_method_can_get_index_of_an_element&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for datastructure.test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_insert_element_at_a_particular_index" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysetmethods" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;datastructure.test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_insert_element_at_a_particular_index&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -95,61 +180,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_clear_all_items_in_set" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonClass" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysetmethods" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_mysetmethods.MySetTestCase.test_that_my_set_method_can_clear_all_items_in_set&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_get_index_of_an_element" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonClass" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysetmethods" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_mysetmethods.MySetTestCase.test_that_my_set_method_can_get_index_of_an_element&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_insert_element_at_a_particular_index" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonClass" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysetmethods" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_insert_element_at_a_particular_index&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase" />
-        <item itemvalue="Python tests.Python tests for test_myqueuemethods.MyQueueMethodTest" />
-        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_clear_all_items_in_set" />
-        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_get_index_of_an_element" />
-        <item itemvalue="Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_insert_element_at_a_particular_index" />
+        <item itemvalue="Python tests.Python tests for datastructure.test_myarraymethods.TestMyArrayMethod" />
+        <item itemvalue="Python tests.Python tests for datastructure.test_mysetmethods.MySetTestCase" />
+        <item itemvalue="Python tests.Python tests for datastructure.test_mysetmethods.MySetTestCase" />
+        <item itemvalue="Python tests.Python tests for datastructure.test_myqueuemethods.MyQueueMethodTest" />
+        <item itemvalue="Python tests.Python tests for datastructure.test_mysetmethods.MySetTestCase.test_that_my_set_method_can_get_index_of_an_element" />
       </list>
     </recent_temporary>
   </component>
@@ -171,6 +208,8 @@
       <updated>1737768400002</updated>
       <workItem from="1737768401029" duration="6486000" />
       <workItem from="1737870360930" duration="5579000" />
+      <workItem from="1737905286934" duration="410000" />
+      <workItem from="1737918226372" duration="1882000" />
     </task>
     <servers />
   </component>

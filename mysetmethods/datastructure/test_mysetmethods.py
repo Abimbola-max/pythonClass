@@ -1,6 +1,6 @@
 import unittest
 
-from mysetmethods import MySet
+from datastructure.mysetmethods import MySet
 
 
 class MySetTestCase(unittest.TestCase):
