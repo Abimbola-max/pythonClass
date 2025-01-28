@@ -62,5 +62,23 @@ class MySetTestCase(unittest.TestCase):
         self.assertEqual(0, array_method.len())
         self.assertTrue(array_method.is_empty())
 
+    def test_that_my_set_method_contains_a_specific_element(self):
+        array = MySet(4)
+        array.add_element("7")
+        array.add_element("2")
+        array.add_element("18")
+
+        self.assertTrue(array.contains_element("2"))
+
+    def test_that_my_set_method_does_not_contains_a_specific_element(self):
+        array = MySet(4)
+        array.add_element("7")
+        array.add_element("2")
+        array.add_element("18")
+
+        self.assertFalse(array.contains_element("1"))
+
+
+
 
 

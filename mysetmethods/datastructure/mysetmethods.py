@@ -27,6 +27,10 @@ class MySet:
     def clear(self):
          self.set_method.clear()
 
+    def contains_element(self, element):
+        return self.set_method.contains_element(element)
+
+
 
 
 

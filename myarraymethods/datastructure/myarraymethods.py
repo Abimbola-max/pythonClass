@@ -57,6 +57,14 @@ class MyArrayMethod:
                 return count
         return 0
 
+    def contains_element(self, element):
+        for search_index in  range(self.size, -1, -1):
+            if self.array[search_index] == element:
+                return True
+
+        return False
+
+
 
 
 

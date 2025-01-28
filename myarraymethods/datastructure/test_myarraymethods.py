@@ -59,4 +59,10 @@ class TestMyArrayMethod(unittest.TestCase):
 
         self.assertEqual(3, array.count("bibi"))
 
+    def test_that_my_array_method_does_not_contains_a_specific_element(self):
+        array = MyArrayMethod(4)
+        array.add_element("7")
+        array.add_element("2")
+        array.add_element("18")
 
+        self.assertFalse(array.contains_element("1"))
