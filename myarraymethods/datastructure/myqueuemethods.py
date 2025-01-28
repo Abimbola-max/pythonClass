@@ -14,7 +14,6 @@ class MyQueue:
         self.queue[self.tail] = element
         self.size += 1
 
-
     def peek(self):
         return self.queue[self.head]
 

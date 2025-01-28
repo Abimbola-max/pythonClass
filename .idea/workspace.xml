@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a74f02a-ab09-42a6-b856-83a926c96b40" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myarraymethods/datastructure/myqueuemethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/myarraymethods/datastructure/myqueuemethods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysetmethods/datastructure/test_myqueuemethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysetmethods/datastructure/test_myqueuemethods.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,43 +31,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for datastructure.test_myarraymethods.TestMyArrayMethod.executor": "Run",
-    "Python tests.Python tests for datastructure.test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_contains_a_specific_element.executor": "Run",
-    "Python tests.Python tests for datastructure.test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_does_not_contains_a_specific_element.executor": "Run",
-    "Python tests.Python tests for datastructure.test_myqueuemethods.MyQueueMethodTestCase.executor": "Run",
-    "Python tests.Python tests for datastructure.test_myqueuemethods.MyQueueMethodTestCase.test_that_my_queue_can_add_elements.executor": "Run",
-    "Python tests.Python tests for datastructure.test_myqueuemethods.MyQueueMethodTestCase.test_that_my_queue_is_empty.executor": "Run",
-    "Python tests.Python tests for datastructure.test_mysetmethods.MySetTestCase.executor": "Run",
-    "Python tests.Python tests for datastructure.test_mysetmethods.MySetTestCase.test_that_my_array_method_does_not_contains_a_specific_element.executor": "Run",
-    "Python tests.Python tests for datastructure.test_mysetmethods.MySetTestCase.test_that_my_set_method_contains_a_specific_element.executor": "Run",
-    "Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.executor": "Run",
-    "Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_clear_all_elements_in_array_and_return_true_for_is_empty.executor": "Run",
-    "Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_count_the_number_of_occurrence_of_an_element.executor": "Run",
-    "Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_remove_element_and_return_true_if_is_empty.executor": "Run",
-    "Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_remove_element_at_a_particular_index_and_return_size.executor": "Run",
-    "Python tests.Python tests for test_myqueuemethods.MyQueueMethodTest.executor": "Run",
-    "Python tests.Python tests for test_mysetmethods.MySetTestCase.executor": "Run",
-    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_clear_all_items_in_set.executor": "Run",
-    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_get_index_of_an_element.executor": "Run",
-    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_add_items.executor": "Run",
-    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_be_return_length_of_my_set.executor": "Run",
-    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_insert_element_at_a_particular_index.executor": "Run",
-    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_remove_elements_and_return_size.executor": "Run",
-    "Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_exist.executor": "Run",
-    "Python tests.Python tests in test_myarraymethods.py.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for datastructure.test_myarraymethods.TestMyArrayMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for datastructure.test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_contains_a_specific_element.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for datastructure.test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_does_not_contains_a_specific_element.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for datastructure.test_myqueuemethods.MyQueueMethodTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for datastructure.test_myqueuemethods.MyQueueMethodTestCase.test_that_my_queue_can_add_elements.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for datastructure.test_myqueuemethods.MyQueueMethodTestCase.test_that_my_queue_is_empty.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for datastructure.test_mysetmethods.MySetTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for datastructure.test_mysetmethods.MySetTestCase.test_that_my_array_method_does_not_contains_a_specific_element.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for datastructure.test_mysetmethods.MySetTestCase.test_that_my_set_method_contains_a_specific_element.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_clear_all_elements_in_array_and_return_true_for_is_empty.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_count_the_number_of_occurrence_of_an_element.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_remove_element_and_return_true_if_is_empty.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_can_remove_element_at_a_particular_index_and_return_size.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myqueuemethods.MyQueueMethodTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_mysetmethods.MySetTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_clear_all_items_in_set.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_method_can_get_index_of_an_element.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_add_items.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_be_return_length_of_my_set.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_insert_element_at_a_particular_index.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_can_remove_elements_and_return_size.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_mysetmethods.MySetTestCase.test_that_my_set_methods_exist.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_myarraymethods.py.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python tests.Python tests for datastructure.test_myqueuemethods.MyQueueMethodTestCase.test_that_my_queue_can_add_elements">
     <configuration name="Python tests for datastructure.test_myarraymethods.TestMyArrayMethod.test_that_my_array_method_does_not_contains_a_specific_element" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
@@ -197,7 +195,7 @@
       <workItem from="1737870360930" duration="5579000" />
       <workItem from="1737905286934" duration="410000" />
       <workItem from="1737918226372" duration="1882000" />
-      <workItem from="1738026789476" duration="3918000" />
+      <workItem from="1738026789476" duration="4224000" />
     </task>
     <servers />
   </component>
