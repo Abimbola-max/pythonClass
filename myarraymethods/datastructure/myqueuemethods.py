@@ -1,15 +1,23 @@
-from datastructure.myarraymethods import MyArrayMethod
-
 class MyQueue:
 
-    def __init__(self, size):
-        self.queue = MyArrayMethod(size)
+    def __init__(self, capacity):
+        self.size = 0
+        self.capacity = capacity
+        self.queue = [None] * capacity
+        self.tail = 0
+        self.head = 0
 
     def is_empty(self):
-        return self.queue.is_empty()
+        return self.size == 0
 
     def add(self, element):
-        self.queue.add_element(element)
+        self.queue[self.tail] = element
+        self.size += 1
+
+
+    def peek(self):
+        return self.queue[self.head]
+
 
 
 
