@@ -1,6 +1,6 @@
 import unittest
 
-from datastructure.myarraymethods import MyArrayMethod
+from test.myarraymethods import MyArrayMethod
 
 
 class TestMyArrayMethod(unittest.TestCase):
