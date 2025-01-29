@@ -86,7 +86,7 @@
       <recent name="C:\Users\DELL\Documents\pythonClass\datastructures\test\datastructures" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_myqueuemethods.MyQueueMethodTestCase.test_that_my_queue_can_remove_elements_dequeue_method">
+  <component name="RunManager" selected="Python tests.Python tests for test_myqueuemethods.MyQueueMethodTestCase">
     <configuration name="Python tests for test_myqueuemethods.MyQueueMethodTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
@@ -169,8 +169,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_myqueuemethods.MyQueueMethodTestCase.test_that_my_queue_can_remove_elements_dequeue_method" />
         <item itemvalue="Python tests.Python tests for test_myqueuemethods.MyQueueMethodTestCase" />
+        <item itemvalue="Python tests.Python tests for test_myqueuemethods.MyQueueMethodTestCase.test_that_my_queue_can_remove_elements_dequeue_method" />
         <item itemvalue="Python tests.Python tests for test_myqueuemethods.MyQueueMethodTestCase.test_that_my_queue_can_do_peek_method" />
         <item itemvalue="Python tests.Python tests for test_myqueuemethods.MyQueueMethodTestCase.test_that_my_queue_can_add_elements" />
         <item itemvalue="Python tests.Python tests for test_myqueuemethods.MyQueueMethodTestCase.test_that_my_queue_is_empty" />
@@ -199,7 +199,7 @@
       <workItem from="1737918226372" duration="1882000" />
       <workItem from="1738026789476" duration="4224000" />
       <workItem from="1738051283589" duration="957000" />
-      <workItem from="1738092109340" duration="5320000" />
+      <workItem from="1738092109340" duration="6775000" />
     </task>
     <servers />
   </component>
@@ -207,7 +207,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1738116907174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datastructuresproject/test" />
+    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1738118384375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datastructuresproject/test" />
     <SUITE FILE_PATH="coverage/pythonClass$mysetmethods.coverage" NAME="mysetmethods Coverage Results" MODIFIED="1738116008879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datastructuresproject" />
   </component>
 </project>

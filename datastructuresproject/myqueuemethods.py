@@ -18,8 +18,23 @@ class MyQueue:
     def peek(self):
         return self.queue[self.head]
 
-    def dequeue(self):
-        return self.queue[self.head]
+    def dequeue(self, element):
+        removed_element = self.queue.element
+        for index_counter in range(self.queue.getSize() - 1):
+            self.queue.elements[index_counter] = self.queue.elements[index_counter + 1]
+        self.queue.elements[self.queue.getSize() - 1] = None
+        self.queue.size -= 1
+        return removed_element
+
+    def find_index_of(self, element):
+        for index, values in enumerate(self.queue):
+            if values == element:
+                return index
+
+        return -1
+
+
+
 
 
 
