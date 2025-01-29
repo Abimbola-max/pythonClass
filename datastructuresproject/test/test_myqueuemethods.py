@@ -21,5 +21,13 @@ class MyQueueMethodTestCase(unittest.TestCase):
 
         self.assertEqual("50", my_queue.peek())
 
+    def test_that_my_queue_can_remove_elements_dequeue_method(self):
+        my_queue = MyQueue(4)
+        my_queue.add("50")
+        my_queue.add("60")
+        my_queue.add("70")
+        my_queue.dequeue()
+        self.assertEqual("60", my_queue.peek())
+
         
 

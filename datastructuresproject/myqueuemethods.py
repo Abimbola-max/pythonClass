@@ -18,6 +18,10 @@ class MyQueue:
     def peek(self):
         return self.queue[self.head]
 
+    def dequeue(self):
+        return self.queue[self.head]
+
+
 
 
 
