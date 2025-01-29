@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a74f02a-ab09-42a6-b856-83a926c96b40" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastructuresproject/myqueuemethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/datastructuresproject/myqueuemethods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastructuresproject/test/test_myqueuemethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/datastructuresproject/test/test_myqueuemethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructuresproject/mystackmethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/datastructuresproject/mystackmethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructuresproject/test/test_mystackmethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/datastructuresproject/test/test_mystackmethods.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Unit Test" />
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -199,7 +198,7 @@
       <workItem from="1737918226372" duration="1882000" />
       <workItem from="1738026789476" duration="4224000" />
       <workItem from="1738051283589" duration="957000" />
-      <workItem from="1738092109340" duration="6775000" />
+      <workItem from="1738092109340" duration="7114000" />
     </task>
     <servers />
   </component>
