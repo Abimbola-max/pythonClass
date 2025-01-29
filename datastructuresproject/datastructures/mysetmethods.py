@@ -1,4 +1,4 @@
-from datastructure.myarraymethods import MyArrayMethod
+from datastructuresproject.datastructures import myarraymethods
 
 
 class MySet:

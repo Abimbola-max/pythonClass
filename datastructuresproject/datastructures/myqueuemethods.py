@@ -12,6 +12,7 @@ class MyQueue:
 
     def add(self, element):
         self.queue[self.tail] = element
+        self.tail += 1
         self.size += 1
 
     def peek(self):

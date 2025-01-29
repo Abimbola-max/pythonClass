@@ -1,6 +1,6 @@
 import unittest
 
-from datastructure.myqueuemethods import MyQueue
+from datastructures.myqueuemethods import MyQueue
 
 
 class MyQueueMethodTestCase(unittest.TestCase):
