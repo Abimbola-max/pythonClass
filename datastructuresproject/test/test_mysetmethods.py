@@ -1,6 +1,6 @@
 import unittest
 
-from datastructures.datastructure.mysetmethods import MySet
+from datastructuresproject.mysetmethods import MySet
 
 
 class MySetTestCase(unittest.TestCase):

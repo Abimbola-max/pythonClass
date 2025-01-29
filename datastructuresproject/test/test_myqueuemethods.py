@@ -1,7 +1,6 @@
 import unittest
 
-from datastructures.myqueuemethods import MyQueue
-
+from datastructuresproject.myqueuemethods import MyQueue
 
 class MyQueueMethodTestCase(unittest.TestCase):
     def test_that_my_queue_is_empty(self):
