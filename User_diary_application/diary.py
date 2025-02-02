@@ -1,3 +1,7 @@
+from User_diary_application.entry import Entry
+from User_diary_application.exception import IncorrectPin, LockedState
+
+
 class Diary:
 
     def __init__(self, username, password):
@@ -24,19 +28,22 @@ class Diary:
 
     def lock_diary(self, password):
         if password != self.password:
-            raise ValueError('Password does not match.')
+            raise IncorrectPin('Password does not match.')
         self.lock = True
 
-    def is_unlocked(self, password):
-        if self.password_validation(password):
-            self.lock = False
+    def unlock_diary(self, password):
+        if password != self.password:
+            raise IncorrectPin('Password does not match.')
+        self.lock = False
 
-        return True
+    def create_entry(self, entry_id: int, title: str, body: str):
+        if self.lock:
+            raise LockedState("Diary is locked. Cannot add entry.")
+        new_entry = Entry(entry_id, title, body)
+        self.entries.append(new_entry)
 
-    def password_validation(self, password):
-        if self.password != password:
-            raise ValueError('Password does not match.')
-        return True
+    def get_diary_size(self):
+        return len(self.entries)
 
 
 
