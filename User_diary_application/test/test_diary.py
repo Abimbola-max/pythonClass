@@ -1,7 +1,7 @@
 import unittest
 
 from User_diary_application.diary import Diary
-from User_diary_application.exception import IncorrectPin
+from User_diary_application.exception import IncorrectPin, LockedState
 
 
 class MyDiaryTestCase(unittest.TestCase):
@@ -26,8 +26,8 @@ class MyDiaryTestCase(unittest.TestCase):
 
     def test_that_diary_can_be_unlocked_using_correct_password(self):
         my_diary = Diary("username", "password")
-        my_diary.is_locked()
-        self.assertTrue(my_diary.unlock_diary("password"))
+        my_diary.unlock_diary("password")
+        self.assertFalse(my_diary.is_locked())
 
     def test_that_diary_can_would_not_be_unlocked_with_incorrect_pin(self):
         my_diary = Diary("username", "password")
@@ -41,6 +41,16 @@ class MyDiaryTestCase(unittest.TestCase):
         my_diary.create_entry(1,"fish", "protein")
         my_diary.create_entry(2,"beef", "meat")
         self.assertEqual(2, my_diary.get_diary_size())
+
+    def test_that_diary_cannot_perform_operation_when_locked_raises_locked_state_exception(self):
+        my_diary = Diary("username", "password")
+        my_diary.is_locked()
+        with self.assertRaises(LockedState):
+            my_diary.create_entry(1, "fish", "protein")
+
+
+
+
 
 
 
