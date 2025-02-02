@@ -53,8 +53,8 @@ class Diary:
         for entry in self.entries:
             if entry.get_id == entry_id:
                 self.entries.remove(entry)
-                return
-        return NotFoundException("Entry with id {entry_id} not found")
+
+        raise NotFoundException("Entry with id {entry_id} not found")
 
 
     def find_entry_by_id(self, entry_id: int):
@@ -65,7 +65,7 @@ class Diary:
             if entry.get_id() == entry_id:
                 return str(entry)
 
-        return NotFoundException("Entry with id {entry_id} not found")
+        raise NotFoundException("Entry with id {entry_id} not found")
 
     def generate_id(self):
         return self.entry_id + 1
