@@ -15,6 +15,12 @@ class MyDiaryTestCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             Diary("username", None)
 
+    def test_that_diary_is_locked(self):
+        my_diary = Diary("username", "password")
+        self.assertTrue(my_diary.is_locked())
+
+    def test_that_diary_is_locked_without_username(self):
+
 
 
 

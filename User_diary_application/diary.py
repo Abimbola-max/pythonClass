@@ -8,7 +8,7 @@ class Diary:
         self.username = username
         self.password = password
         self.entries = []
-        is_locked = True
+        self.lock = True
 
     def getUsername(self):
         return self.username
@@ -18,4 +18,12 @@ class Diary:
 
     def setUsername(self, username):
         self.username = username
+
+    def is_locked(self):
+        return self.lock
+
+    def lock_diary(self, password):
+        if password != self.password:
+            raise ValueError('Password does not match.')
+        self.lock = True
 
