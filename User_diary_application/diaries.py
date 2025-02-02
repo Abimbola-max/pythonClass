@@ -9,4 +9,10 @@ class Diaries:
     def get_number_of_diary(self):
         return len(self.diaries)
 
+    def find_by_username(self, username):
+        for diary in self.diaries:
+            if diary.getUsername() == username:
+                return diary
+
+
 
