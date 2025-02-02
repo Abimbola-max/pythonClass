@@ -38,15 +38,26 @@ class MyDiaryTestCase(unittest.TestCase):
         my_diary = Diary("username", "password")
         my_diary.is_locked()
         my_diary.unlock_diary("password")
-        my_diary.create_entry(1,"fish", "protein")
-        my_diary.create_entry(2,"beef", "meat")
+        my_diary.create_entry("fish", "protein")
+        my_diary.create_entry("beef", "meat")
         self.assertEqual(2, my_diary.get_diary_size())
 
     def test_that_diary_cannot_perform_operation_when_locked_raises_locked_state_exception(self):
         my_diary = Diary("username", "password")
         my_diary.is_locked()
         with self.assertRaises(LockedState):
-            my_diary.create_entry(1, "fish", "protein")
+            my_diary.create_entry( "fish", "protein")
+
+    def test_that_diary_entry_can_be_deleted(self):
+        my_diary = Diary("username", "password")
+        my_diary.is_locked()
+        my_diary.unlock_diary("password")
+        my_diary.create_entry("fish", "protein")
+        my_diary.create_entry("beef", "meat")
+        my_diary.delete_entry(1)
+        my_diary.delete_entry(2)
+
+        self.assertEqual(0, my_diary.get_diary_size())
 
 
 

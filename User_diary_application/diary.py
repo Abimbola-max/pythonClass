@@ -12,6 +12,7 @@ class Diary:
         self.username = username
         self.password = password
         self.entries = []
+        self.entry_id = 0
         self.lock = True
 
     def getUsername(self):
@@ -36,14 +37,19 @@ class Diary:
             raise IncorrectPin('Password does not match.')
         self.lock = False
 
-    def create_entry(self, entry_id: int, title: str, body: str):
+    def create_entry(self, title: str, body: str):
         if self.lock:
             raise LockedState("Diary is locked. Cannot add entry.")
-        new_entry = Entry(entry_id, title, body)
+        new_entry = Entry(self.entry_id, title, body)
         self.entries.append(new_entry)
 
     def get_diary_size(self):
         return len(self.entries)
+
+    def delete_entry(self, entry_id):
+        if self.lock:
+            raise LockedState("Diary is locked. Cannot delete entry.")
+        self.entries.pop(entry_id)
 
 
 
