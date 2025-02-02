@@ -6,9 +6,6 @@ from User_diary_application.exception import IncorrectPinException, LockedStateE
 
 class MyDiaryTestCase(unittest.TestCase):
 
-    def setUp(self):
-        self.diary = Diary("username", "password")
-
     def test_that_diary_can_be_created(self):
         Diary("username", "password")
 
@@ -55,7 +52,8 @@ class MyDiaryTestCase(unittest.TestCase):
         my_diary.create_entry("fish", "protein")
         my_diary.create_entry("beef", "meat")
         my_diary.create_entry("fish", "animal")
-        my_diary.delete_entry(2)
+
+        my_diary.delete_entry_by_id(1)
 
         self.assertEqual(2, my_diary.get_diary_size())
 
@@ -65,9 +63,18 @@ class MyDiaryTestCase(unittest.TestCase):
         my_diary.unlock_diary("password")
         my_diary.create_entry("fish", "protein")
         my_diary.create_entry("beef", "meat")
-        my_diary.create_entry("fish", "animal")
 
-        self.assertEqual("beef meat", my_diary.find_entry_by_id(2))
+        self.assertEqual("fish protein", my_diary.find_entry_by_id(1))
+
+    def test_that_diary_can_delete_and_find_entry_by_entry_id(self):
+        my_diary = Diary("username", "password")
+        my_diary.is_locked()
+        my_diary.unlock_diary("password")
+        my_diary.create_entry("fish", "protein")
+        my_diary.create_entry("beef", "meat")
+        my_diary.delete_entry_by_id(2)
+        self.assertEqual("fish protein", my_diary.find_entry_by_id(1))
+
 
 
 

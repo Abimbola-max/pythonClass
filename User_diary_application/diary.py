@@ -40,25 +40,35 @@ class Diary:
     def create_entry(self, title: str, body: str):
         if self.lock:
             raise LockedStateException("Diary is locked. Cannot add entry.")
-        new_entry = Entry(self.entry_id, title, body)
+        new_entry = Entry(self.generate_id(), title, body)
         self.entries.append(new_entry)
 
     def get_diary_size(self):
         return len(self.entries)
 
-    def delete_entry(self, entry_id: int):
+
+    def delete_entry_by_id(self, entry_id: int):
         if self.lock:
             raise LockedStateException("Diary is locked. Cannot delete entry.")
-        self.entries.pop(entry_id)
+        for entry in self.entries:
+            if entry.get_id == entry_id:
+                self.entries.remove(entry)
+                return
+        return NotFoundException("Entry with id {entry_id} not found")
+
 
     def find_entry_by_id(self, entry_id: int):
         if self.lock:
             raise LockedStateException("Diary is locked. Cannot find entry.")
 
         for entry in self.entries:
-            if entry.get_id == entry_id:
-                self.entries.remove(entry)
-                return entry
+            if entry.get_id() == entry_id:
+                return str(entry)
+
+        return NotFoundException("Entry with id {entry_id} not found")
+
+    def generate_id(self):
+        return self.entry_id + 1
 
 
 
