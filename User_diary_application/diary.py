@@ -27,3 +27,16 @@ class Diary:
             raise ValueError('Password does not match.')
         self.lock = True
 
+    def is_unlocked(self, password):
+        if self.password_validation(password):
+            self.lock = False
+
+        return True
+
+    def password_validation(self, password):
+        if self.password != password:
+            raise ValueError('Password does not match.')
+        return True
+
+
+
