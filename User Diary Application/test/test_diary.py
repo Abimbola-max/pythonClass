@@ -1,8 +1,8 @@
 import unittest
 
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
+class MyDiaryTestCase(unittest.TestCase):
+    def test_that_my_diary_is_empty(self):
         self.assertEqual(True, False)  # add assertion here
 
 
