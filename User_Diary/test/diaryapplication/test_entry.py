@@ -1,10 +1,12 @@
 import unittest
 
+from User_Diary.diaryapplication.entry import Entry
+
 
 class MyEntryTestCase(unittest.TestCase):
     def test_that_entry_is_empty(self):
-        entry.is_empty()
+        entry = Entry(0, "", "")
+        self.assertTrue(entry.is_empty())
 
 
-if __name__ == '__main__':
-    unittest.main()
+
