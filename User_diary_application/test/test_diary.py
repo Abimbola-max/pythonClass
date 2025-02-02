@@ -1,7 +1,7 @@
 import unittest
 
 from User_diary_application.diary import Diary
-from User_diary_application.exception import IncorrectPin, LockedState
+from User_diary_application.exception import IncorrectPinException, LockedStateException
 
 
 class MyDiaryTestCase(unittest.TestCase):
@@ -31,7 +31,7 @@ class MyDiaryTestCase(unittest.TestCase):
 
     def test_that_diary_can_would_not_be_unlocked_with_incorrect_pin(self):
         my_diary = Diary("username", "password")
-        with self.assertRaises(IncorrectPin):
+        with self.assertRaises(IncorrectPinException):
             my_diary.unlock_diary("pasword")
 
     def test_that_diary_can_create_entry(self):
@@ -45,19 +45,29 @@ class MyDiaryTestCase(unittest.TestCase):
     def test_that_diary_cannot_perform_operation_when_locked_raises_locked_state_exception(self):
         my_diary = Diary("username", "password")
         my_diary.is_locked()
-        with self.assertRaises(LockedState):
+        with self.assertRaises(LockedStateException):
             my_diary.create_entry( "fish", "protein")
 
-    def test_that_diary_entry_can_be_deleted(self):
+    def test_that_diary_entry_can_be_deleted_and_return_size(self):
         my_diary = Diary("username", "password")
         my_diary.is_locked()
         my_diary.unlock_diary("password")
         my_diary.create_entry("fish", "protein")
         my_diary.create_entry("beef", "meat")
-        my_diary.delete_entry(1)
+        my_diary.create_entry("fish", "animal")
         my_diary.delete_entry(2)
 
-        self.assertEqual(0, my_diary.get_diary_size())
+        self.assertEqual(2, my_diary.get_diary_size())
+
+    def test_that_diary_can_find_entry_by_entry_id(self):
+        my_diary = Diary("username", "password")
+        my_diary.is_locked()
+        my_diary.unlock_diary("password")
+        my_diary.create_entry("fish", "protein")
+        my_diary.create_entry("beef", "meat")
+        my_diary.create_entry("fish", "animal")
+
+        self.assertEqual("beef meat", my_diary.find_entry_by_id(2))
 
 
 

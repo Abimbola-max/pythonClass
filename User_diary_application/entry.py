@@ -27,4 +27,4 @@ class Entry:
         self.__id = entry_id
 
     def __str__(self):
-        return "title: " + self.__title + "\nbody: " + self.__body
+        return self.__title + " " + self.__body
