@@ -54,7 +54,7 @@ class Diary:
             if entry.get_id == entry_id:
                 self.entries.remove(entry)
 
-        raise NotFoundException("Entry with id {entry_id} not found")
+        return NotFoundException("Entry with id {entry_id} not found")
 
 
     def find_entry_by_id(self, entry_id: int):
@@ -65,10 +65,22 @@ class Diary:
             if entry.get_id() == entry_id:
                 return str(entry)
 
-        raise NotFoundException("Entry with id {entry_id} not found")
+        return NotFoundException("Entry with id {entry_id} not found")
 
     def generate_id(self):
         return self.entry_id + 1
+
+    def update(self, entry_id, title, body):
+        if self.lock:
+            raise LockedStateException("Diary is locked. Cannot update entry.")
+
+        for entry in self.entries:
+            if entry.get_id() == entry_id:
+                entry.set_title(title)
+                entry.set_body(body)
+
+        return NotFoundException("Entry with id {entry_id} not found")
+
 
 
 
