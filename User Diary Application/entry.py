@@ -28,8 +28,3 @@ class Entry:
 
     def __str__(self):
         return "title: " + self.__title + "\nbody: " + self.__body
-
-
-
-
-
