@@ -21,7 +21,7 @@ class MyTestCase(unittest.TestCase):
         diaries.add("username","password")
         diaries.add("username1","password1")
         found_diary = diaries.find_by_username("username")
-        self.assertEqual("username", found_diary.get_username())
+        self.assertEqual("username", found_diary.getUsername())
         actual = diaries.get_number_of_diary()
         self.assertEqual(1, actual)
 
