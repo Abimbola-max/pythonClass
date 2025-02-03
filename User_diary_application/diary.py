@@ -70,7 +70,7 @@ class Diary:
     def generate_id(self):
         return self.entry_id + 1
 
-    def update(self, entry_id, title, body):
+    def update_entry(self, entry_id, title, body):
         if self.lock:
             raise LockedStateException("Diary is locked. Cannot update entry.")
 

@@ -82,7 +82,7 @@ class MyDiaryTestCase(unittest.TestCase):
         my_diary.create_entry("fish", "protein")
         my_diary.create_entry("beef", "meat")
 
-        my_diary.update(1, "is good", "is good also")
+        my_diary.update_entry(1, "is good", "is good also")
 
         self.assertEqual("is good is good also", my_diary.find_entry_by_id(1))
 
