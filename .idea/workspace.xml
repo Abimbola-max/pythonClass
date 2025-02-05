@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a9d1f5d-41e8-4c4f-8b0e-27165ff7c4bf" name="Changes" comment="" />
+    <list default="true" id="5a9d1f5d-41e8-4c4f-8b0e-27165ff7c4bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Televison Task/television.py" beforeDir="false" afterPath="$PROJECT_DIR$/Televison Task/television.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Televison Task/test_television.py" beforeDir="false" afterPath="$PROJECT_DIR$/Televison Task/test_television.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,133 +34,132 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_diaries.MyTestCase.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diaries.MyTestCase.test_that_diaries_can_find_user_by_username.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_be_unlocked_using_correct_password.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_be_unlocked_using_password.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_create_entry.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_delete_and_find_entry_by_entry_id.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_find_entry_by_entry_id.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_update_entry.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_would_not_be_unlocked_with_incorrect_pin.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_cannot_be_created_without_username.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_cannot_perform_operation_when_locked_raises_locked_state_exception.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_entry_can_be_deleted.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_entry_can_be_deleted_and_return_size.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_is_locked.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in loader.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_diary.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.diary.executor&quot;: &quot;Run&quot;,
-    &quot;Python.diaryapplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_diaries.MyTestCase.executor": "Run",
+    "Python tests.Python tests for test_diaries.MyTestCase.test_that_diaries_can_find_user_by_username.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_be_unlocked_using_correct_password.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_be_unlocked_using_password.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_create_entry.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_delete_and_find_entry_by_entry_id.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_find_entry_by_entry_id.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_update_entry.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_would_not_be_unlocked_with_incorrect_pin.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_cannot_be_created_without_username.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_cannot_perform_operation_when_locked_raises_locked_state_exception.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_entry_can_be_deleted.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_entry_can_be_deleted_and_return_size.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_is_locked.executor": "Run",
+    "Python tests.Python tests for test_television.MyTelevisionTestCase.executor": "Run",
+    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_decrease_volume.executor": "Run",
+    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_increase_volume.executor": "Run",
+    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_is_off_by_default.executor": "Run",
+    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_is_turned_off.executor": "Run",
+    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_is_turned_on.executor": "Run",
+    "Python tests.Python tests in loader.py.executor": "Run",
+    "Python tests.Python tests in test_diary.py.executor": "Run",
+    "Python.diary.executor": "Run",
+    "Python.diaryapplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Python.diary">
-    <configuration name="diary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonClass" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User_diary_application" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/User_diary_application/diary.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_diaries.MyTestCase.test_that_diaries_can_find_user_by_username" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_decrease_volume">
+    <configuration name="Python tests for test_television.MyTelevisionTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User_diary_application/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Televison Task" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_diaries.MyTestCase.test_that_diaries_can_find_user_by_username&quot;" />
+      <option name="_new_target" value="&quot;test_television.MyTelevisionTestCase&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_diary.MyDiaryTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_television.MyTelevisionTestCase.test_that_television_can_decrease_volume" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User_diary_application/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Televison Task" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_diary.MyDiaryTestCase&quot;" />
+      <option name="_new_target" value="&quot;test_television.MyTelevisionTestCase.test_that_television_can_decrease_volume&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_delete_and_find_entry_by_entry_id" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_television.MyTelevisionTestCase.test_that_television_can_increase_volume" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User_diary_application/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Televison Task" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_diary.MyDiaryTestCase.test_that_diary_can_delete_and_find_entry_by_entry_id&quot;" />
+      <option name="_new_target" value="&quot;test_television.MyTelevisionTestCase.test_that_television_can_increase_volume&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_diary.MyDiaryTestCase.test_that_diary_entry_can_be_deleted_and_return_size" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_television.MyTelevisionTestCase.test_that_television_is_turned_off" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User_diary_application/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Televison Task" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_diary.MyDiaryTestCase.test_that_diary_entry_can_be_deleted_and_return_size&quot;" />
+      <option name="_new_target" value="&quot;test_television.MyTelevisionTestCase.test_that_television_is_turned_off&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_television.MyTelevisionTestCase.test_that_television_is_turned_on" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Televison Task" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_television.MyTelevisionTestCase.test_that_television_is_turned_on&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.diary" />
-        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_delete_and_find_entry_by_entry_id" />
-        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_entry_can_be_deleted_and_return_size" />
-        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase" />
-        <item itemvalue="Python tests.Python tests for test_diaries.MyTestCase.test_that_diaries_can_find_user_by_username" />
+        <item itemvalue="Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_decrease_volume" />
+        <item itemvalue="Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_increase_volume" />
+        <item itemvalue="Python tests.Python tests for test_television.MyTelevisionTestCase" />
+        <item itemvalue="Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_is_turned_on" />
+        <item itemvalue="Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_is_turned_off" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +183,7 @@
       <workItem from="1738600298533" duration="488000" />
       <workItem from="1738629168766" duration="1584000" />
       <workItem from="1738672933374" duration="3316000" />
-      <workItem from="1738749627280" duration="777000" />
+      <workItem from="1738749627280" duration="6827000" />
     </task>
     <servers />
   </component>
@@ -188,7 +191,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1738675258098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User_diary_application/test" />
+    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1738755641013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Televison Task" />
     <SUITE FILE_PATH="coverage/pythonClass$diaryapplication.coverage" NAME="diaryapplication Coverage Results" MODIFIED="1738561419967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User_diary_application" />
     <SUITE FILE_PATH="coverage/pythonClass$diary.coverage" NAME="diary Coverage Results" MODIFIED="1738676134130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User_diary_application" />
   </component>
