@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a9d1f5d-41e8-4c4f-8b0e-27165ff7c4bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Televison Task/television.py" beforeDir="false" afterPath="$PROJECT_DIR$/Televison Task/television.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Televison Task/test_television.py" beforeDir="false" afterPath="$PROJECT_DIR$/Televison Task/test_television.py" afterDir="false" />
-    </list>
+    <list default="true" id="5a9d1f5d-41e8-4c4f-8b0e-27165ff7c4bf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,7 +191,7 @@
       <workItem from="1738600298533" duration="488000" />
       <workItem from="1738629168766" duration="1584000" />
       <workItem from="1738672933374" duration="3316000" />
-      <workItem from="1738749627280" duration="16620000" />
+      <workItem from="1738749627280" duration="17304000" />
     </task>
     <servers />
   </component>
@@ -203,7 +199,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1738798549277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Televison Task" />
+    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1738799246745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Televison Task" />
     <SUITE FILE_PATH="coverage/pythonClass$diaryapplication.coverage" NAME="diaryapplication Coverage Results" MODIFIED="1738561419967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User_diary_application" />
     <SUITE FILE_PATH="coverage/pythonClass$diary.coverage" NAME="diary Coverage Results" MODIFIED="1738676134130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User_diary_application" />
   </component>
