@@ -60,20 +60,23 @@ class MyDiaryTestCase(unittest.TestCase):
         my_diary.unlock_diary("password")
         my_diary.create_entry("fish", "protein")
         my_diary.create_entry("beef", "meat")
-        my_diary.delete_entry_by_id(2)
+        print("printing entries => ", my_diary.entries)
         self.assertEqual("fish protein", my_diary.find_entry_by_id(1))
+        my_diary.delete_entry_by_id(1)
+        self.assertEqual("fish protein", my_diary.find_entry_by_id(1))
+        self.assertEqual(1, my_diary.get_diary_size())
 
-    # def test_that_diary_entry_can_be_deleted_and_return_size(self):
-    #     my_diary = Diary("username", "password")
-    #     my_diary.is_locked()
-    #     my_diary.unlock_diary("password")
-    #     my_diary.create_entry("fish", "protein")
-    #     my_diary.create_entry("beef", "meat")
-    #     my_diary.create_entry("fish", "animal")
-    #
-    #     my_diary.delete_entry_by_id(1)
-    #
-    #     self.assertEqual(2, my_diary.get_diary_size())
+    def test_that_diary_entry_can_be_deleted_and_return_size(self):
+        my_diary = Diary("username", "password")
+        my_diary.is_locked()
+        my_diary.unlock_diary("password")
+        my_diary.create_entry("fish", "protein")
+        my_diary.create_entry("beef", "meat")
+        my_diary.create_entry("fish", "animal")
+
+        my_diary.delete_entry_by_id(1)
+
+        self.assertEqual(2, my_diary.get_diary_size())
 
     def test_that_diary_can_update_entry(self):
         my_diary = Diary("username", "password")

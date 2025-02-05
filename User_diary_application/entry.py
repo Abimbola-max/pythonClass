@@ -26,5 +26,5 @@ class Entry:
     def set_id(self, entry_id):
         self.__id = entry_id
 
-    def __str__(self):
-        return self.__title + " " + self.__body
+    def __repr__(self):
+        return "from entry class " + self.__title + " " + self.__body

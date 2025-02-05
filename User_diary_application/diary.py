@@ -14,6 +14,7 @@ class Diary:
         self.entries = []
         self.entry_id = 0
         self.lock = True
+        # self.entry = Entry(self.generate_id(), title, body)
 
     def getUsername(self):
         return self.username
@@ -42,6 +43,7 @@ class Diary:
             raise LockedStateException("Diary is locked. Cannot add entry.")
         new_entry = Entry(self.generate_id(), title, body)
         self.entries.append(new_entry)
+        print(self.entries)
 
     def get_diary_size(self):
         return len(self.entries)
@@ -54,7 +56,7 @@ class Diary:
             if entry.get_id == entry_id:
                 self.entries.remove(entry)
 
-        return NotFoundException("Entry with id {entry_id} not found")
+        return NotFoundException(f"Entry with id {entry_id} not found")
 
 
     def find_entry_by_id(self, entry_id: int):
@@ -65,7 +67,7 @@ class Diary:
             if entry.get_id() == entry_id:
                 return str(entry)
 
-        return NotFoundException("Entry with id {entry_id} not found")
+        return NotFoundException(f"Entry with id {entry_id} not found")
 
     def generate_id(self):
         return self.entry_id + 1
@@ -81,8 +83,15 @@ class Diary:
 
         return NotFoundException("Entry with id {entry_id} not found")
 
+    def __str__(self):
+        return f"from diary class {super().__str__()}"
 
 
+
+
+my_diary = Diary("bimbola", "password")
+my_diary.unlock_diary("password")
+my_diary.create_entry("hi", "how are you")
 
 
 
