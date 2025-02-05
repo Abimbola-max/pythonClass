@@ -1,4 +1,4 @@
-from exception import VolumeException, ChannelTypeException
+from exception import VolumeException, ChannelTypeException, TelevisionStateException
 
 
 class Television:
@@ -20,6 +20,8 @@ class Television:
         return self.is_on
 
     def increase_volume(self):
+        if self.is_on:
+            raise TelevisionStateException("Television turned off")
         if not self.is_on:
             return self.volume
         if self.volume > 50:
@@ -28,6 +30,8 @@ class Television:
         return self.volume
 
     def decrease_volume(self):
+        if self.is_on:
+            raise TelevisionStateException("Television turned off")
         if self.volume <= 0:
             raise VolumeException("Your tv is currently mute")
         self.volume -= 5
@@ -40,15 +44,17 @@ class Television:
         return self.channel
 
     def increase_channel(self):
+        if self.is_on:
+            raise TelevisionStateException("Television turned off")
         self.channel += 2
         return self.channel
 
     def set_channel(self, channel_button):
-        if channel_button > 50 or channel_button < 2 or channel_button % 2 != 0:
+        if self.is_on:
+            raise TelevisionStateException("Television turned off")
+        if channel_button > 50 or channel_button < 2 and channel_button % 2 != 0:
             raise ChannelTypeException("Channel must be between 2 and 50")
         self.channel = channel_button
-
-
 
 
 
