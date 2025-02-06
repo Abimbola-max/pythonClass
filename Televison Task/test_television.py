@@ -22,7 +22,7 @@ class MyTelevisionTestCase(unittest.TestCase):
         tv.turn_on()
         tv.is_tv_on()
         tv.increase_volume()
-        self.assertEqual(10, tv.volume())
+        self.assertEqual(10, tv.volume)
 
     def test_that_television_can_increase_volume_twice_and_volume_return_fifteen(self):
         tv = Television()
@@ -57,10 +57,9 @@ class MyTelevisionTestCase(unittest.TestCase):
 
     def test_that_television_can_put_chanel_up(self):
         tv = Television()
-        tv.is_tv_on()
         tv.turn_on()
         tv.increase_channel()
-        self.assertEqual(4, tv.get_chanel())
+        self.assertEqual(4, tv.channel)
 
     def test_that_television_can_increase_volume_twice_and_decrease_volume_once_return_ten(self):
         tv = Television()
@@ -85,9 +84,9 @@ class MyTelevisionTestCase(unittest.TestCase):
         tv.is_tv_on()
         tv.turn_on()
         tv.set_channel(22)
-        self.assertEqual(22, tv._channel())
+        self.assertEqual(22, tv._channel)
         tv.set_channel(26)
-        self.assertEqual(26, tv._channel())
+        self.assertEqual(26, tv._channel)
 
 
 
