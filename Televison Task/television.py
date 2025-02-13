@@ -49,7 +49,7 @@ class Television:
 
     def decrease_channel(self):
         if self._channel < 2:
-            raise ChannelTypeException("Channel cannot be below 1")
+            raise ChannelTypeException("Channel cannot be below 2")
         self._channel -= 2
         return self._channel
 
