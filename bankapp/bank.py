@@ -70,6 +70,13 @@ class Bank:
 
         self.accounts.remove(account)
 
+    def buy_airtime(self, account_number, password, amount, phone_number, network):
+        account = self.find_account(account_number)
+        if not account:
+            raise AccountNotFoundException("Account not found")
+
+        return account.buy_airtime(amount, phone_number, network, password)
+
 
 
 

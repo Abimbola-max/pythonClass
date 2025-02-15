@@ -2,7 +2,7 @@ import random
 
 from User_diary_application.exception import IncorrectPinException
 from bankapp.Exception import InsufficientFundException, InvalidAmountException, InvalidPasswordException, \
-    NullPointerException
+    NullPointerException, IncompletePhoneNumberException
 
 
 class Account:
@@ -82,4 +82,18 @@ class Account:
         if self.invalid_password(password):
             raise InvalidPasswordException("Passwords don't match")
         self.__password = new_password
+
+    def buy_airtime(self, amount, phone_number, network, password):
+        if self.invalid_password(password):
+            raise InvalidPasswordException("Incorrect password")
+        if self.invalid_amount(amount):
+            raise ValueError("Withdrawal amount must be positive")
+        if self.insufficient_fund(amount):
+            raise InsufficientFundException("Insufficient funds")
+        if len(phone_number) < 11 or len(phone_number) > 12:
+            raise IncompletePhoneNumberException("Invalid phone number")
+
+        self.__balance -= amount
+        return f"Airtime of {amount} successfully purchased for {phone_number} on {network}. New balance is {self.__balance}"
+
 

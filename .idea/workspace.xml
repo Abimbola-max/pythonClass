@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5a9d1f5d-41e8-4c4f-8b0e-27165ff7c4bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankapp/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/bankapp/account.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bankapp/bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/bankapp/bank.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bankapp/test/test_bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/bankapp/test/test_bank.py" afterDir="false" />
     </list>
@@ -48,6 +49,7 @@
     "Python tests.Python tests for test_bank.MyBankTestCase.test_that_bank_account_can_deposit_5k_checks_balance_and_returns_5K.executor": "Run",
     "Python tests.Python tests for test_bank.MyBankTestCase.test_that_bank_can_create_account.executor": "Run",
     "Python tests.Python tests for test_bank.MyBankTestCase.test_that_bank_can_delete_user_account_if_requested_by_user.executor": "Run",
+    "Python tests.Python tests for test_bank.MyBankTestCase.test_that_user_can_buy_airtime.executor": "Run",
     "Python tests.Python tests for test_diaries.MyTestCase.executor": "Run",
     "Python tests.Python tests for test_diaries.MyTestCase.test_that_diaries_can_find_user_by_username.executor": "Run",
     "Python tests.Python tests for test_diary.MyDiaryTestCase.executor": "Run",
@@ -109,7 +111,7 @@
       <recent name="C:\Users\DELL\Documents\pythonClass\Bank Application\bankapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_bank.MyBankTestCase.test_that_bank_can_delete_user_account_if_requested_by_user">
+  <component name="RunManager" selected="Python tests.Python tests for test_bank.MyBankTestCase.test_that_user_can_buy_airtime">
     <configuration name="Python tests for test_bank.MyBankTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
@@ -158,22 +160,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_bank.MyBankTestCase.test_that_bank_account_can_deposit_10K_and_withdrawals_4k_checks_balance_and_returns_6K" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonClass" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bankapp/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_bank.MyBankTestCase.test_that_bank_account_can_deposit_10K_and_withdrawals_4k_checks_balance_and_returns_6K&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test_bank.MyBankTestCase.test_that_bank_can_delete_user_account_if_requested_by_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
@@ -190,13 +176,29 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_bank.MyBankTestCase.test_that_user_can_buy_airtime" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bankapp/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_bank.MyBankTestCase.test_that_user_can_buy_airtime&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_bank.MyBankTestCase.test_that_bank_can_delete_user_account_if_requested_by_user" />
+        <item itemvalue="Python tests.Python tests for test_bank.MyBankTestCase.test_that_user_can_buy_airtime" />
         <item itemvalue="Python tests.Python tests for test_bank.MyBankTestCase" />
+        <item itemvalue="Python tests.Python tests for test_bank.MyBankTestCase.test_that_bank_can_delete_user_account_if_requested_by_user" />
         <item itemvalue="Python tests.Python tests for test_bank.MyBankTestCase.test_that_account_A_can_transfer_5K_to_account_B_returns_both_accounts_balance" />
         <item itemvalue="Python tests.Python tests for test_bank.MyBankTestCase.test_that_account_A_can_transfer_10K_to_account_B_returns_both_accounts_balance" />
-        <item itemvalue="Python tests.Python tests for test_bank.MyBankTestCase.test_that_bank_account_can_deposit_10K_and_withdrawals_4k_checks_balance_and_returns_6K" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +229,7 @@
       <workItem from="1739434973766" duration="14028000" />
       <workItem from="1739466607093" duration="4992000" />
       <workItem from="1739537931653" duration="2125000" />
-      <workItem from="1739614009690" duration="11771000" />
+      <workItem from="1739614009690" duration="15055000" />
     </task>
     <servers />
   </component>
@@ -235,7 +237,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1739625809057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bankapp/test" />
+    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1739636668550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bankapp/test" />
     <SUITE FILE_PATH="coverage/pythonClass$diaryapplication.coverage" NAME="diaryapplication Coverage Results" MODIFIED="1738561419967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User_diary_application" />
     <SUITE FILE_PATH="coverage/pythonClass$diary.coverage" NAME="diary Coverage Results" MODIFIED="1739190844504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User_diary_application" />
   </component>

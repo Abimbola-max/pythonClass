@@ -54,6 +54,14 @@ class MyBankTestCase(unittest.TestCase):
         self.bank.delete_account(account_number, "password")
         self.assertEqual(0, self.bank.get_number_of_accounts())
 
+    def test_that_user_can_buy_airtime(self):
+        account = self.bank.create_account("Femi", "Moses", "password")
+        account_number = account.account_number
+        self.bank.deposit(1000, account_number)
+        airtime_purchase = self.bank.buy_airtime(account_number, "password", 500, "08012345678", "MTN")
+        self.assertIn("Airtime of 500 successfully purchased for 08012345678 on MTN", airtime_purchase)
+        self.assertEqual(500, self.bank.check_balance(account_number, "password"))
+
 
 
 
