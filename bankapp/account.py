@@ -1,8 +1,5 @@
-import random
-
-from User_diary_application.exception import IncorrectPinException
-from bankapp.Exception import InsufficientFundException, InvalidAmountException, InvalidPasswordException, \
-    NullPointerException, IncompletePhoneNumberException
+from bankapp.Exception import NullPointerException, InvalidPasswordException, InvalidAmountException, \
+    InsufficientFundException, IncompletePhoneNumberException
 
 
 class Account:
@@ -48,7 +45,7 @@ class Account:
 
     def check_balance(self, password):
         if self.invalid_password(password):
-            raise IncorrectPinException("Passwords don't match")
+            raise InvalidPasswordException("Passwords don't match")
         return self.__balance
 
     def increase_amount_by(self, amount):

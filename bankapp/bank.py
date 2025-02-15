@@ -1,7 +1,8 @@
 import random
 
-from bankapp.Exception import AccountNotFoundException, InvalidPasswordException, InvalidAmountException
+from bankapp.Exception import AccountNotFoundException, InvalidAmountException, InvalidPasswordException
 from bankapp.account import Account
+
 
 class Bank:
 

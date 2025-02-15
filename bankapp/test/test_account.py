@@ -1,6 +1,6 @@
 import unittest
 
-from User_diary_application.exception import IncorrectPinException
+from bankapp.Exception import InvalidPasswordException
 from bankapp.account import Account
 
 class MyAccountTestCase(unittest.TestCase):
@@ -12,7 +12,7 @@ class MyAccountTestCase(unittest.TestCase):
         self.assertEqual(0, self.account.balance)
 
     def test_that_incorrect_password_raises_invalid_pin_exception(self):
-        self.assertRaises(IncorrectPinException, self.account.check_balance, "pass")
+        self.assertRaises(InvalidPasswordException, self.account.check_balance, "pass")
 
     def test_that_account_deposit_6k_returns_6k_as_balance(self):
         self.account.increase_amount_by(6_000)
