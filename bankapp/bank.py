@@ -1,6 +1,6 @@
 import random
 
-from bankapp.Exception import AccountNotFoundException
+from bankapp.Exception import AccountNotFoundException, InvalidPasswordException
 from bankapp.account import Account
 
 class Bank:
@@ -58,6 +58,19 @@ class Bank:
 
         sender_account.decrease_amount_by(amount, password)
         receiver_account.increase_amount_by(amount)
+
+
+    def delete_account(self, account_number, password):
+        account = self.find_account(account_number)
+        if not account:
+            raise AccountNotFoundException("Account not found")
+
+        if account.invalid_password(password):
+            raise InvalidPasswordException("Incorrect password")
+
+        self.accounts.remove(account)
+
+
 
 
 
