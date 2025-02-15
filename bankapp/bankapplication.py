@@ -44,10 +44,9 @@ def main_menu():
             case _:
                 raise InputMisMatchException("Invalid Input")
 
-
     except InputMisMatchException:
-        print("Invalid Input")
-
+        print("Invalid input. Please enter a number between 1 and 9.")
+        main_menu()
 
 def create_account():
     try:
@@ -67,17 +66,22 @@ def deposit():
     try:
         account_number = int(input("Please enter your account number: "))
         account = bank.find_account(account_number)
+        if account is None:
+            raise AccountNotFoundException("Account not found")
+
         amount = int(input("Please enter your amount: "))
-        account.deposit(amount, account_number)
+        print(account)
+        bank.deposit(account_number, amount)
         print("*****Account Deposited Successfully*****")
     except InvalidAmountException as e:
         print(e)
-    except InvalidPasswordException as e:
-        print(e)
     except AccountNotFoundException as e:
         print(e)
+    except ValueError:
+        print("Invalid amount. Please enter a valid number.")
     finally:
         main_menu()
+
 
 def withdraw():
     print("WITHDRAW MONEY")

@@ -93,4 +93,7 @@ class Account:
         self.__balance -= amount
         return f"Airtime of {amount} successfully purchased for {phone_number} on {network}. New balance is {self.__balance}"
 
+    def __repr__(self):
+        return "First Name" + self.__first_name + "\n" + "Last Name" + self.__last_name + "\n" + "account number: " + self.__account_number
+
 

@@ -19,10 +19,10 @@ class Bank:
        return len(self.accounts)
 
     def generate_account_number(self):
-        random_number = random.randint(100000, 999999)
+        random_number = int(random.randint(100000, 999999))
         return random_number
 
-    def deposit(self, amount, account_number):
+    def deposit(self, amount, account_number:int):
         account = self.find_account(account_number)
         if account:
             return account.increase_amount_by(amount)
@@ -35,7 +35,7 @@ class Bank:
             return account.check_balance(password)
         raise AccountNotFoundException("Account not found")
 
-    def find_account(self, account_number):
+    def find_account(self, account_number: int):
         for account in self.accounts:
             if account.account_number == account_number:
                 return account
