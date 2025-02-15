@@ -28,6 +28,15 @@ class MyBankTestCase(unittest.TestCase):
         account = self.bank.create_account("Femi", "Moses", "password")
         self.assertRaises(InvalidAmountException, self.bank.deposit, -5_000, account.account_number)
 
+    def test_that_user_can_update_pin_and_use_new_pin_to_check_balance_deposit_and_withdraw(self):
+        account = self.bank.create_account("Femi", "Moses", "password")
+        account_number = account.account_number
+        self.bank.update_password(account_number, "password", "password111")
+        self.bank.deposit(5_000, account_number)
+        self.assertEqual(5_000, self.bank.check_balance(account_number, "password111"))
+        self.bank.withdraw(5_000, account_number, "password111")
+        self.assertEqual(0, self.bank.check_balance(account_number, "password111"))
+
     def test_that_bank_account_can_deposit_10K_and_withdrawals_4k_checks_balance_and_returns_6K(self):
         account = self.bank.create_account("Femi", "Moses", "password")
         account_number = account.account_number
@@ -59,7 +68,7 @@ class MyBankTestCase(unittest.TestCase):
         self.assertEqual(5_000, self.bank.check_balance(sender_account_number, "password"))
         self.assertEqual(5_000, self.bank.check_balance(receiver_account_number, "password1"))
 
-    def test_that_user_cannot_deposit_5K_and_transfer_minus_3k_throws_invalid_amount_exception(self):
+    def test_that_user_can_deposit_5K_and_cannot_transfer_minus_3k_throws_invalid_amount_exception(self):
         sender_account = self.bank.create_account("Femi", "Moses", "password")
         sender_account_number = sender_account.account_number
         receiver_account = self.bank.create_account("Tope", "Ola", "password1")
@@ -76,6 +85,8 @@ class MyBankTestCase(unittest.TestCase):
         self.assertEqual(1, self.bank.get_number_of_accounts())
         self.bank.delete_account(account_number, "password")
         self.assertEqual(0, self.bank.get_number_of_accounts())
+        account_two = self.bank.create_account("Lara", "Pelumi", "password2")
+        self.assertEqual(1, self.bank.get_number_of_accounts())
 
     def test_that_user_can_buy_airtime(self):
         account = self.bank.create_account("Femi", "Moses", "password")

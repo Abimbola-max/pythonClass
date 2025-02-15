@@ -63,6 +63,13 @@ class Bank:
         sender_account.decrease_amount_by(amount, password)
         receiver_account.increase_amount_by(amount)
 
+    def update_password(self, account_number, password, new_password):
+        account = self.find_account(account_number)
+        if account:
+            account.update_password(password, new_password)
+
+        return InvalidPasswordException("Password update failed due to incorrect password")
+
 
     def delete_account(self, account_number, password):
         account = self.find_account(account_number)
