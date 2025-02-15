@@ -46,15 +46,6 @@ class Account:
             raise NullPointerException("First name cannot be empty")
         self.__last_name = last_name
 
-    # @password.setter
-    # def password(self, password):
-    #     if password != self.__password:
-    #         raise IncorrectPinException("password does not match")
-    #     if password.isEmpty():
-    #         raise NullPointerException("password field cannot be empty")
-    #     self.__password = password
-
-
     def check_balance(self, password):
         if self.invalid_password(password):
             raise IncorrectPinException("Passwords don't match")
