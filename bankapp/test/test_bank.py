@@ -37,6 +37,13 @@ class MyBankTestCase(unittest.TestCase):
         self.bank.withdraw(4_000, account_number, "password")
         self.assertEqual(6_000, self.bank.check_balance(account_number, "password"))
 
+    def test_that_user_can_deposit_5k_but_cannot_withdrawals_minus_4k_throws_invalid_amount_exception(self):
+        account = self.bank.create_account("Femi", "Moses", "password")
+        account_number = account.account_number
+        self.bank.deposit(5_000, account_number)
+        self.assertEqual(5_000, self.bank.check_balance(account_number, "password"))
+        self.assertRaises(InvalidAmountException, self.bank.deposit, -5_000, account_number)
+
     def test_that_account_A_can_transfer_5K_to_account_B_returns_both_accounts_balance(self):
         sender_account = self.bank.create_account("Femi", "Moses", "password")
         receiver_account = self.bank.create_account("bibi", "abimbola", "password1")
