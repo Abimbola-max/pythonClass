@@ -1,6 +1,6 @@
 import random
 
-from bankapp.Exception import AccountNotFoundException, InvalidPasswordException
+from bankapp.Exception import AccountNotFoundException, InvalidPasswordException, InvalidAmountException
 from bankapp.account import Account
 
 class Bank:
@@ -53,8 +53,12 @@ class Bank:
 
         if not sender_account:
             raise AccountNotFoundException("Sender account not found")
+
         if not receiver_account:
             raise AccountNotFoundException("Receiver account not found")
+
+        if amount < 0:
+            raise InvalidAmountException("Amount cannot be negative")
 
         sender_account.decrease_amount_by(amount, password)
         receiver_account.increase_amount_by(amount)
