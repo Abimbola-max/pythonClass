@@ -1,4 +1,5 @@
-from bankapp.Exception import InputMisMatchException, NullPointerException
+from bankapp.Exception import InputMisMatchException, NullPointerException, InvalidAmountException, \
+    InvalidPasswordException, AccountNotFoundException
 from bankapp.bank import Bank
 
 bank = Bank()
@@ -22,6 +23,8 @@ def main_menu():
         match user_input:
             case 1:
                 create_account()
+            case 2:
+                deposit()
 
     except InputMisMatchException:
         print("Invalid Input")
@@ -38,5 +41,25 @@ def create_account():
         print(f"Hello {first_name} {last_name} your account number is {account.account_number}")
     except NullPointerException:
         print("Fields cannot be empty")
+    finally:
+        main_menu()
+
+def deposit():
+    try:
+        account_number = int(input("Please enter your account number: "))
+        account = bank.find_account(account_number)
+        amount = int(input("Please enter your amount: "))
+        account.deposit(amount, account_number)
+        print("*****Account Deposited Successfully*****")
+    except InvalidAmountException as e:
+        print(e)
+    except InvalidPasswordException as e:
+        print(e)
+    except AccountNotFoundException as e:
+        print(e)
+    finally:
+        main_menu()
+
+
 
 main_menu()

@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a9d1f5d-41e8-4c4f-8b0e-27165ff7c4bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bankapp/bankapp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankapp/Exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/bankapp/Exception.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankapp/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/bankapp/account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankapp/test/test_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/bankapp/test/test_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankapp/bankapplication.py" beforeDir="false" afterPath="$PROJECT_DIR$/bankapp/bankapplication.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +95,7 @@
     "Python tests.Python tests in test_diary.py.executor": "Run",
     "Python tests.Python tests in test_television.py.executor": "Run",
     "Python.bankapp.executor": "Run",
+    "Python.bankapplication.executor": "Run",
     "Python.diary.executor": "Run",
     "Python.diaryapplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -239,7 +237,7 @@
       <workItem from="1739434973766" duration="14028000" />
       <workItem from="1739466607093" duration="4992000" />
       <workItem from="1739537931653" duration="2125000" />
-      <workItem from="1739614009690" duration="20408000" />
+      <workItem from="1739614009690" duration="22009000" />
     </task>
     <servers />
   </component>
@@ -247,8 +245,9 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1739645264996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bankapp/test" />
+    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1739646242299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bankapp/test" />
     <SUITE FILE_PATH="coverage/pythonClass$diaryapplication.coverage" NAME="diaryapplication Coverage Results" MODIFIED="1738561419967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User_diary_application" />
+    <SUITE FILE_PATH="coverage/pythonClass$bankapplication.coverage" NAME="bankapplication Coverage Results" MODIFIED="1739647058940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bankapp" />
     <SUITE FILE_PATH="coverage/pythonClass$diary.coverage" NAME="diary Coverage Results" MODIFIED="1739190844504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User_diary_application" />
     <SUITE FILE_PATH="coverage/pythonClass$bankapp.coverage" NAME="bankapp Coverage Results" MODIFIED="1739645480864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bankapp" />
   </component>
