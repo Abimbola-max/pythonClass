@@ -83,10 +83,10 @@ def withdraw():
     print("WITHDRAW MONEY")
     amount = int(input("Enter Amount you'd like to withdraw: "))
     account_number = int(input("Enter your account number: "))
-    pin = input("Enter 4 character pin: ")
+    password = input("Enter password: ")
 
     try:
-        bank.withdraw(amount, account_number, pin)
+        bank.withdraw(amount, account_number, password)
         print(f"*****{amount} withdrawn Successfully!*****")
     except InsufficientFundException as e:
         print(e)
@@ -105,10 +105,10 @@ def transfer():
     sender = int(input("Enter Account number of the sender: "))
     receiver = int(input("Enter Account number of receiver: "))
     amount = int(input("Enter amount to transfer: "))
-    pin = input("Enter your pin: ")
+    password = input("Enter your password: ")
 
     try:
-        bank.transfer(sender, receiver, amount, pin)
+        bank.transfer(sender, receiver, amount, password)
         print(f"*****{amount} transferred successfully from {sender} to {receiver}*****")
     except InsufficientFundException as e:
         print(e)
@@ -125,10 +125,10 @@ def transfer():
 def check_balance():
     print("BALANCE")
     account_number = int(input("Enter Account Number: "))
-    pin = input("Enter pin: ")
+    password = input("Enter password: ")
 
     try:
-        balance = bank.check_balance(account_number, pin)
+        balance = bank.check_balance(account_number, password)
         print(f"Your Account balance is {balance}")
     except InsufficientFundException as e:
         print(e)
@@ -184,7 +184,7 @@ def close_account():
         account_number = int(input("Enter Account Number: "))
         account = bank.find_account(account_number)
         password = input("Enter password: ")
-        account.close_account(account_number, password)
+        account.delete_account(account_number, password)
         print("\n*****Account Closed Successfully*****")
     except AccountNotFoundException as e:
         print(e)
@@ -195,10 +195,5 @@ def close_account():
 def exit_app():
     print("Thank you for using Bibi's Bank")
     sys.exit(0)
-
-
-
-
-
 
 main_menu()
