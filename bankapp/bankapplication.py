@@ -1,7 +1,7 @@
 import sys
 
 from bankapp.Exception import InputMisMatchException, NullPointerException, InvalidAmountException, \
-    InvalidPasswordException, AccountNotFoundException, InsufficientFundException
+    InvalidPasswordException, AccountNotFoundException, InsufficientFundException, IncompletePhoneNumberException
 from bankapp.bank import Bank
 
 bank = Bank()
@@ -19,7 +19,7 @@ def main_menu():
                               7-> Buy Airtime
                               8-> Close Account
                               9-> Number of Registered Accounts
-                              9-> Exit App
+                              10-> Exit App
                               """)
 
         user_input = int(input("Select an option: "))
@@ -214,6 +214,8 @@ def buy_airtime():
     except InvalidPasswordException as e:
         print(e)
     except AccountNotFoundException as e:
+        print(e)
+    except IncompletePhoneNumberException as e:
         print(e)
     finally:
         main_menu()
