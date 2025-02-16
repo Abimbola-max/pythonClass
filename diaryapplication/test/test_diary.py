@@ -87,7 +87,7 @@ class MyDiaryTestCase(unittest.TestCase):
         with self.assertRaises(NotFoundException):
             my_diary.find_entry_by(entry_id_one)
 
-    def test_that_diary_can_update_entry(self):
+    def test_that_diary_can_update_entry_find_and_retruns_size(self):
         my_diary = Diary("username", "password")
         self.assertEqual(True, my_diary.is_locked())
         my_diary.unlock_diary("password")
@@ -95,8 +95,8 @@ class MyDiaryTestCase(unittest.TestCase):
         entry_id_one = my_diary.create_entry("fish", "protein")
         entry_id_two = my_diary.create_entry("beef", "meat")
         my_diary.update_entry(entry_id_one, "is good", "is good also")
-
+        self.assertEqual(2, my_diary.get_number_of_entries())
         self.assertEqual("is good is good also", my_diary.find_entry_by(entry_id_one).__str__())
-
+        self.assertEqual(2, my_diary.get_number_of_entries())
 
 
