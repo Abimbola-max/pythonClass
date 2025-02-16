@@ -18,6 +18,7 @@ def main_menu():
                               6-> Update Password
                               7-> Buy Airtime
                               8-> Close Account
+                              9-> Number of Registered Accounts
                               9-> Exit App
                               """)
 
@@ -40,6 +41,8 @@ def main_menu():
             case 8:
                 close_account()
             case 9:
+                number_of_customers()
+            case 10:
                 exit_app()
             case _:
                 raise InputMisMatchException("Invalid Input")
@@ -179,23 +182,32 @@ def buy_airtime():
     try:
         account_number = int(input("Enter Account Number: "))
         account = bank.find_account(account_number)
+        if not account:
+            raise AccountNotFoundException("Account not found.")
+
         phone_number = input("Enter phone number: ")
         password = input("Enter password: ")
         amount = int(input("Enter amount: "))
-        airtime_input = input("What Airtime would you like to buy?\n1. GLO\n2. AIRTEL\n3. MTN\n4. 9-MOBILE")
-        match airtime_input:
-            case "1":
-                account.buy_airtime(amount, phone_number, airtime_input, password)
-                print("airtime purchase is successful")
-            case "2":
-                account.buy_airtime(amount, phone_number, airtime_input, password)
-                print("airtime purchase is successful")
-            case "3":
-                account.buy_airtime(amount, phone_number, airtime_input, password)
-                print("airtime purchase is successful")
-            case "4":
-                account.buy_airtime(amount, phone_number, airtime_input, password)
-                print("airtime purchase is successful")
+
+        if amount <= 0:
+            raise ValueError("Amount must be positive.")
+
+        airtime_input = input(
+            "What Airtime would you like to buy?\n1. GLO\n2. AIRTEL\n3. MTN\n4. 9-MOBILE\nEnter your choice (1-4): ")
+
+        airtime_providers = {
+            "1": "GLO",
+            "2": "AIRTEL",
+            "3": "MTN",
+            "4": "9-MOBILE"
+        }
+
+        airtime_provider = airtime_providers.get(airtime_input)
+        if not airtime_provider:
+            raise ValueError("Invalid airtime selection.")
+
+        account.buy_airtime(amount, phone_number, airtime_provider, password)
+        print("Airtime purchase successful")
 
     except InsufficientFundException as e:
         print(e)
@@ -215,6 +227,22 @@ def close_account():
         print("\n*****Account Closed Successfully*****")
     except AccountNotFoundException as e:
         print(e)
+    finally:
+        main_menu()
+
+def number_of_customers():
+    ADMIN_PIN = 2205
+    try:
+        pin1 = int(input("Enter PIN: "))
+        if ADMIN_PIN != pin1:
+            print("Invalid PIN")
+            return
+        else:
+            print("Number of registered customers are:")
+            number_of_accounts = bank.get_number_of_accounts()
+            print(number_of_accounts)
+    except ValueError:
+        print("Enter a valid PIN")
     finally:
         main_menu()
 
