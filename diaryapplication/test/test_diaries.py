@@ -19,6 +19,7 @@ class MyDiariesTestCase(unittest.TestCase):
         self.assertEqual(2, diaries.get_number_of_diaries())
         found_diary = diaries.find_by("username")
         self.assertEqual(diary1, found_diary)
+        
 
 
 

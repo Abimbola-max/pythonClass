@@ -20,4 +20,3 @@ class Diaries:
             if diary.username == username:
                 return diary
         raise NotFoundException("Diary not found")
-
