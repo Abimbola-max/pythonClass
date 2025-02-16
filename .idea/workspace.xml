@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a9d1f5d-41e8-4c4f-8b0e-27165ff7c4bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/bankapp/bankapplication.py" beforeDir="false" afterPath="$PROJECT_DIR$/bankapp/bankapplication.py" afterDir="false" />
+    <list default="true" id="d7976368-a159-4439-8a37-7b885d3b3eb2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/diaryapplication/diary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diaryapplication/entry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diaryapplication/test/test_diary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonClass.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonClass.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_diary_application/diaries.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_diary_application/diary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_diary_application/diaryapplication.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_diary_application/entry.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_diary_application/exception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_diary_application/test/test_diaries.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_diary_application/test/test_diary.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,84 +35,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 7
-}</component>
-  <component name="ProjectId" id="2sUOxA3qpH0U2AQMbuX87Yj8JCO" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2t7icT3ozhTWTpAQhmrGo7x3eq3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python tests.Python tests for bankapplication.test_bank.MyBankTestCase.executor": "Run",
-    "Python tests.Python tests for test_account.MyAccountTestCase.executor": "Run",
-    "Python tests.Python tests for test_account.MyAccountTestCase.test_that_account_can_buy_airtime_2k_after_deposit_of_5K.executor": "Run",
-    "Python tests.Python tests for test_account.MyAccountTestCase.test_that_account_can_transfer_from_A_to_B.executor": "Run",
-    "Python tests.Python tests for test_account.MyAccountTestCase.test_that_account_deposit_6k_returns_6k_as_balance.executor": "Run",
-    "Python tests.Python tests for test_account.MyAccountTestCase.test_that_incorrect_password_raises_invalid_pin_exception.executor": "Run",
-    "Python tests.Python tests for test_account.MyTestCase.executor": "Run",
-    "Python tests.Python tests for test_account.MyTestCase.test_that_account_can_check_balance_and_returns_default_amount.executor": "Run",
-    "Python tests.Python tests for test_bank.MyBankTestCase.executor": "Run",
-    "Python tests.Python tests for test_bank.MyBankTestCase.test_that_account_A_can_transfer_10K_to_account_B_returns_both_accounts_balance.executor": "Run",
-    "Python tests.Python tests for test_bank.MyBankTestCase.test_that_account_A_can_transfer_5K_to_account_B_returns_both_accounts_balance.executor": "Run",
-    "Python tests.Python tests for test_bank.MyBankTestCase.test_that_bank_account_can_deposit_10K_and_withdrawals_4k_checks_balance_and_returns_6K.executor": "Run",
-    "Python tests.Python tests for test_bank.MyBankTestCase.test_that_bank_account_can_deposit_5k_checks_balance_and_returns_5K.executor": "Run",
-    "Python tests.Python tests for test_bank.MyBankTestCase.test_that_bank_can_create_account.executor": "Run",
-    "Python tests.Python tests for test_bank.MyBankTestCase.test_that_bank_can_delete_user_account_if_requested_by_user.executor": "Run",
-    "Python tests.Python tests for test_bank.MyBankTestCase.test_that_user_can_buy_airtime.executor": "Run",
-    "Python tests.Python tests for test_bank.MyBankTestCase.test_that_user_can_deposit_5k_but_cannot_withdrawals_minus_4k_throws_invalid_amount_exception.executor": "Run",
-    "Python tests.Python tests for test_bank.MyBankTestCase.test_that_user_can_update_pin_and_use_new_pin_to_check_balance_deposit_and_withdraw.executor": "Run",
-    "Python tests.Python tests for test_bank.MyBankTestCase.test_that_user_cannot_deposit_5K_and_transfer_minus_3k_throws_invalid_amount_exception.executor": "Run",
-    "Python tests.Python tests for test_bank.MyBankTestCase.test_that_user_cannot_deposit_minus_5k_throws_invalid_amount_exception.executor": "Run",
-    "Python tests.Python tests for test_diaries.MyTestCase.executor": "Run",
-    "Python tests.Python tests for test_diaries.MyTestCase.test_that_diaries_can_find_user_by_username.executor": "Run",
     "Python tests.Python tests for test_diary.MyDiaryTestCase.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_be_created.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_be_unlocked_using_correct_password.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_be_unlocked_using_password.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_create_entry.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_delete_and_find_entry_by_entry_id.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_find_entry_by_entry_id.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_update_entry.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_would_not_be_unlocked_with_incorrect_pin.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_cannot_be_created_without_password.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_cannot_be_created_without_username.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_cannot_perform_operation_when_locked_raises_locked_state_exception.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_entry_can_be_deleted.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_entry_can_be_deleted_and_return_size.executor": "Run",
-    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_is_locked.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_also_raises_a_mute_exception_if_volume_is_zero.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_decrease_volume.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_decrease_volume_one_volume_returns_zero_also_mute.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_decrease_volume_twice_and_increase_volume_returns_ten_also_change_channel.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_increase_channel_twice_and_reduce_channel_once_return_four.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_increase_volume.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_increase_volume_once_and_volume_returns_ten.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_increase_volume_twice_and_decrease_volume_once.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_increase_volume_twice_and_decrease_volume_once_return_ten.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_increase_volume_twice_and_volume_return_fifteen.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_put_chanel_down.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_put_chanel_down_once.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_put_chanel_down_once_raise_an_exception.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_put_chanel_up.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_can_set_channel_to_a_preferred_channel.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_is_off_by_default.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_is_turned_off.executor": "Run",
-    "Python tests.Python tests for test_television.MyTelevisionTestCase.test_that_television_is_turned_on.executor": "Run",
-    "Python tests.Python tests in loader.py.executor": "Run",
-    "Python tests.Python tests in test_diary.py.executor": "Run",
-    "Python tests.Python tests in test_television.py.executor": "Run",
-    "Python.account.executor": "Run",
-    "Python.bankapp.executor": "Run",
-    "Python.bankapplication.executor": "Run",
-    "Python.diary.executor": "Run",
-    "Python.diaryapplication.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_i_can_create_a_diary.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_i_cant_create_a_diary_without_a_username.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_my_diary_can_throw_null_exception_if_password_field_is_empty.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_my_diary_can_throw_null_exception_if_username_field_is_empty.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -110,103 +61,94 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\DELL\Documents\pythonClass\bankapp\test\bankapplication" />
-      <recent name="C:\Users\DELL\Documents\pythonClass\bankapp\bankapplication" />
-      <recent name="C:\Users\DELL\Documents\pythonClass\bankapp\test" />
-      <recent name="C:\Users\DELL\Documents\pythonClass\Bank Application\test" />
-      <recent name="C:\Users\DELL\Documents\pythonClass\Bank Application" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="Python tests for bankapplication.test_account.MyAccountTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_my_diary_can_throw_null_exception_if_password_field_is_empty">
+    <configuration name="Python tests for test_diary.MyDiaryTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bankapp/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diaryapplication/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;bankapplication.test_account.MyAccountTestCase&quot;" />
+      <option name="_new_target" value="&quot;test_diary.MyDiaryTestCase&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for bankapplication.test_account.MyAccountTestCase.test_that_account_deposit_6k_returns_6k_as_balance" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_diary.MyDiaryTestCase.test_that_i_can_create_a_diary" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bankapp/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diaryapplication/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;bankapplication.test_account.MyAccountTestCase.test_that_account_deposit_6k_returns_6k_as_balance&quot;" />
+      <option name="_new_target" value="&quot;test_diary.MyDiaryTestCase.test_that_i_can_create_a_diary&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for bankapplication.test_bank.MyBankTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_diary.MyDiaryTestCase.test_that_i_cant_create_a_diary_without_a_username" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bankapp/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diaryapplication/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;bankapplication.test_bank.MyBankTestCase&quot;" />
+      <option name="_new_target" value="&quot;test_diary.MyDiaryTestCase.test_that_i_cant_create_a_diary_without_a_username&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_account.MyAccountTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_diary.MyDiaryTestCase.test_that_my_diary_can_throw_null_exception_if_password_field_is_empty" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bankapp/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diaryapplication/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_account.MyAccountTestCase&quot;" />
+      <option name="_new_target" value="&quot;test_diary.MyDiaryTestCase.test_that_my_diary_can_throw_null_exception_if_password_field_is_empty&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_bank.MyBankTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_diary.MyDiaryTestCase.test_that_my_diary_can_throw_null_exception_if_username_field_is_empty" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bankapp/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diaryapplication/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_bank.MyBankTestCase&quot;" />
+      <option name="_new_target" value="&quot;test_diary.MyDiaryTestCase.test_that_my_diary_can_throw_null_exception_if_username_field_is_empty&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_bank.MyBankTestCase" />
-        <item itemvalue="Python tests.Python tests for test_account.MyAccountTestCase" />
-        <item itemvalue="Python tests.Python tests for bankapplication.test_bank.MyBankTestCase" />
-        <item itemvalue="Python tests.Python tests for bankapplication.test_account.MyAccountTestCase" />
-        <item itemvalue="Python tests.Python tests for bankapplication.test_account.MyAccountTestCase.test_that_account_deposit_6k_returns_6k_as_balance" />
+        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_my_diary_can_throw_null_exception_if_password_field_is_empty" />
+        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_my_diary_can_throw_null_exception_if_username_field_is_empty" />
+        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_i_cant_create_a_diary_without_a_username" />
+        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_i_can_create_a_diary" />
+        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -221,23 +163,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5a9d1f5d-41e8-4c4f-8b0e-27165ff7c4bf" name="Changes" comment="" />
-      <created>1738506944398</created>
+      <changelist id="d7976368-a159-4439-8a37-7b885d3b3eb2" name="Changes" comment="" />
+      <created>1739709593566</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1738506944398</updated>
-      <workItem from="1738506949184" duration="23081000" />
-      <workItem from="1738600298533" duration="488000" />
-      <workItem from="1738629168766" duration="1584000" />
-      <workItem from="1738672933374" duration="3316000" />
-      <workItem from="1738749627280" duration="18091000" />
-      <workItem from="1738826973566" duration="292000" />
-      <workItem from="1738914098189" duration="6844000" />
-      <workItem from="1739187799926" duration="4795000" />
-      <workItem from="1739434973766" duration="14028000" />
-      <workItem from="1739466607093" duration="4992000" />
-      <workItem from="1739537931653" duration="2125000" />
-      <workItem from="1739614009690" duration="31036000" />
+      <updated>1739709593566</updated>
+      <workItem from="1739709594652" duration="2510000" />
     </task>
     <servers />
   </component>
@@ -245,11 +176,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1739649330539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bankapp/test" />
-    <SUITE FILE_PATH="coverage/pythonClass$diaryapplication.coverage" NAME="diaryapplication Coverage Results" MODIFIED="1738561419967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User_diary_application" />
-    <SUITE FILE_PATH="coverage/pythonClass$bankapplication.coverage" NAME="bankapplication Coverage Results" MODIFIED="1739706138497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bankapp" />
-    <SUITE FILE_PATH="coverage/pythonClass$diary.coverage" NAME="diary Coverage Results" MODIFIED="1739190844504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User_diary_application" />
-    <SUITE FILE_PATH="coverage/pythonClass$bankapp.coverage" NAME="bankapp Coverage Results" MODIFIED="1739645480864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bankapp" />
-    <SUITE FILE_PATH="coverage/pythonClass$account.coverage" NAME="account Coverage Results" MODIFIED="1739690478893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bankapp" />
+    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1739711576666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diaryapplication/test" />
   </component>
 </project>
