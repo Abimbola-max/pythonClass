@@ -2,6 +2,7 @@ import unittest
 
 from bankapp.Exception import NullPointerException, InvalidPasswordException
 from diaryapplication.diary import Diary
+from diaryapplication.exception import LockedStateException
 
 
 class MyDiaryTestCase(unittest.TestCase):
@@ -44,6 +45,33 @@ class MyDiaryTestCase(unittest.TestCase):
         with self.assertRaises(InvalidPasswordException):
             my_diary.unlock_diary("pasword")
 
-    # def test_that_my_diary_can_
+    def test_that_diary_cannot_perform_operation_when_locked_raises_locked_state_exception(self):
+        my_diary = Diary("username", "password")
+        self.assertEqual(True, my_diary.is_locked())
+        with self.assertRaises(LockedStateException):
+            my_diary.create_entry("fish", "protein")
+
+    def test_that_diary_can_find_entry_by_entry_id(self):
+        my_diary = Diary("username", "password")
+        self.assertEqual(True, my_diary.is_locked())
+        my_diary.unlock_diary("password")
+        self.assertEqual(False, my_diary.is_locked())
+        entry_id_one = my_diary.create_entry("fish", "protein")
+        entry_id_two = my_diary.create_entry("beef", "meat")
+        found_entry_two = my_diary.find_entry_by(entry_id_two)
+        self.assertEqual("beef meat", found_entry_two.__str__())
+        found_entry_one = my_diary.find_entry_by(entry_id_one)
+        self.assertEqual("fish protein", found_entry_one.__str__())
+
+    def test_that_diary_can_delete_and_find_entry_by_entry_id(self):
+        my_diary = Diary("username", "password")
+        self.assertEqual(True, my_diary.is_locked())
+        my_diary.unlock_diary("password")
+        self.assertEqual(False, my_diary.is_locked())
+        entry_id_one = my_diary.create_entry("fish", "protein")
+        entry_id_two = my_diary.create_entry("beef", "meat")
+        my_diary.delete_entry_by(entry_id_one)
+        self.assertEqual(1, my_diary.get_number_of_entries())
+
 
 

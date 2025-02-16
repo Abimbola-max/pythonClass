@@ -2,7 +2,7 @@ import random
 
 from bankapp.Exception import NullPointerException, InvalidPasswordException
 from diaryapplication.entry import Entry
-from diaryapplication.exception import LockedStateException
+from diaryapplication.exception import LockedStateException, NotFoundException
 
 
 class Diary:
@@ -47,10 +47,30 @@ class Diary:
     def create_entry(self, title: str, body: str):
         if self.is_locked():
             raise LockedStateException("Diary is locked, unlock diary to create entry")
-        self.entries.append(Entry(self.generate_id(), title, body))
+        entry_id = self.generate_id()
+        new_entry = Entry(entry_id, title, body)
+        self.entries.append(new_entry)
+        return entry_id
 
     def generate_id(self):
         return random.randint(1, 900)
+
+    def find_entry_by(self, entry_id)->Entry:
+        for entry in self.entries:
+            if entry.entry_id == entry_id:
+                return entry
+
+        raise NotFoundException("Entry not found")
+
+    def delete_entry_by(self, entry_id):
+        deleted_entry = self.find_entry_by(entry_id)
+        if entry_id not in self.entries:
+            raise NotFoundException("Entry not found")
+
+        self.entries.remove(deleted_entry)
+
+
+
 
 
 

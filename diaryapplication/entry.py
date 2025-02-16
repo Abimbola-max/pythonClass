@@ -37,5 +37,4 @@ class Entry:
         self.__body = body
 
     def __str__(self):
-        return "Title: " + self.__title + "\nBody: " + self.__body + "\n" + "Entry ID: " + self.__entry_id
-
+        return f"{self.title} {self.body}"
