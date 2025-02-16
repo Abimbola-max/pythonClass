@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7976368-a159-4439-8a37-7b885d3b3eb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryapplication/diary.py" beforeDir="false" afterPath="$PROJECT_DIR$/diaryapplication/diary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryapplication/entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/diaryapplication/entry.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diaryapplication/test/test_diary.py" beforeDir="false" afterPath="$PROJECT_DIR$/diaryapplication/test/test_diary.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +34,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Python tests for test_diary.MyDiaryTestCase.executor": "Run",
+    "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_create_entry_A_delete_A_throws_Not_found_exception_when_searching.executor": "Run",
     "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_delete_and_find_entry_by_entry_id.executor": "Run",
     "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_find_entry_by_entry_id.executor": "Run",
     "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_would_not_be_unlocked_with_incorrect_pin.executor": "Run",
@@ -62,7 +60,7 @@
       <recent name="C:\Users\DELL\Documents\pythonClass\diaryapplication" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_delete_and_find_entry_by_entry_id">
+  <component name="RunManager" selected="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_create_entry_A_delete_A_throws_Not_found_exception_when_searching">
     <configuration name="Python tests for test_diary.MyDiaryTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
@@ -76,6 +74,22 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_diary.MyDiaryTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_create_entry_A_delete_A_throws_Not_found_exception_when_searching" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diaryapplication/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_diary.MyDiaryTestCase.test_that_diary_can_create_entry_A_delete_A_throws_Not_found_exception_when_searching&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -111,22 +125,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_diary.MyDiaryTestCase.test_that_diary_cannot_perform_operation_when_locked_raises_locked_state_exception" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonClass" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diaryapplication/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_diary.MyDiaryTestCase.test_that_diary_cannot_perform_operation_when_locked_raises_locked_state_exception&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test_diary.MyDiaryTestCase.test_that_my_diary_can_create_entries_and_return_number_of_entries" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
@@ -145,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_create_entry_A_delete_A_throws_Not_found_exception_when_searching" />
         <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_delete_and_find_entry_by_entry_id" />
         <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_find_entry_by_entry_id" />
         <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase" />
         <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_my_diary_can_create_entries_and_return_number_of_entries" />
-        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_cannot_perform_operation_when_locked_raises_locked_state_exception" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739709593566</updated>
-      <workItem from="1739709594652" duration="5331000" />
+      <workItem from="1739709594652" duration="5755000" />
     </task>
     <servers />
   </component>
@@ -177,6 +175,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1739714955701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diaryapplication/test" />
+    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1739715382203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diaryapplication/test" />
   </component>
 </project>

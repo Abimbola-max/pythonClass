@@ -2,7 +2,7 @@ import unittest
 
 from bankapp.Exception import NullPointerException, InvalidPasswordException
 from diaryapplication.diary import Diary
-from diaryapplication.exception import LockedStateException
+from diaryapplication.exception import LockedStateException, NotFoundException
 
 
 class MyDiaryTestCase(unittest.TestCase):
@@ -63,7 +63,7 @@ class MyDiaryTestCase(unittest.TestCase):
         found_entry_one = my_diary.find_entry_by(entry_id_one)
         self.assertEqual("fish protein", found_entry_one.__str__())
 
-    def test_that_diary_can_delete_and_find_entry_by_entry_id(self):
+    def test_that_diary_can_delete_and_by_entry_id_returns_number_of_entries(self):
         my_diary = Diary("username", "password")
         self.assertEqual(True, my_diary.is_locked())
         my_diary.unlock_diary("password")
@@ -72,6 +72,30 @@ class MyDiaryTestCase(unittest.TestCase):
         entry_id_two = my_diary.create_entry("beef", "meat")
         my_diary.delete_entry_by(entry_id_one)
         self.assertEqual(1, my_diary.get_number_of_entries())
+        my_diary.delete_entry_by(entry_id_two)
+        self.assertEqual(0, my_diary.get_number_of_entries())
+
+    def test_that_diary_can_create_entry_A_delete_A_throws_Not_found_exception_when_searching(self):
+        my_diary = Diary("username", "password")
+        self.assertEqual(True, my_diary.is_locked())
+        my_diary.unlock_diary("password")
+        self.assertEqual(False, my_diary.is_locked())
+        entry_id_one = my_diary.create_entry("fish", "protein")
+        entry_id_two = my_diary.create_entry("beef", "meat")
+        my_diary.delete_entry_by(entry_id_one)
+        self.assertEqual(1, my_diary.get_number_of_entries())
+        with self.assertRaises(NotFoundException):
+            my_diary.find_entry_by(entry_id_one)
+
+    def test_that_diary_can_update_entry(self):
+        my_diary = Diary("username", "password")
+        my_diary.unlock_diary("password")
+        my_diary.create_entry("fish", "protein")
+        my_diary.create_entry("beef", "meat")
+
+        my_diary.update_entry(1, "is good", "is good also")
+
+        self.assertEqual("is good is good also", my_diary.find_entry_by_id(1))
 
 
 
