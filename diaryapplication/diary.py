@@ -64,9 +64,6 @@ class Diary:
 
     def delete_entry_by(self, entry_id):
         deleted_entry = self.find_entry_by(entry_id)
-        if entry_id not in self.entries:
-            raise NotFoundException("Entry not found")
-
         self.entries.remove(deleted_entry)
 
 
