@@ -89,13 +89,14 @@ class MyDiaryTestCase(unittest.TestCase):
 
     def test_that_diary_can_update_entry(self):
         my_diary = Diary("username", "password")
+        self.assertEqual(True, my_diary.is_locked())
         my_diary.unlock_diary("password")
-        my_diary.create_entry("fish", "protein")
-        my_diary.create_entry("beef", "meat")
+        self.assertEqual(False, my_diary.is_locked())
+        entry_id_one = my_diary.create_entry("fish", "protein")
+        entry_id_two = my_diary.create_entry("beef", "meat")
+        my_diary.update_entry(entry_id_one, "is good", "is good also")
 
-        my_diary.update_entry(1, "is good", "is good also")
-
-        self.assertEqual("is good is good also", my_diary.find_entry_by_id(1))
+        self.assertEqual("is good is good also", my_diary.find_entry_by(entry_id_one).__str__())
 
 
 

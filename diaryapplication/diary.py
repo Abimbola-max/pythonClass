@@ -63,8 +63,15 @@ class Diary:
         raise NotFoundException("Entry not found")
 
     def delete_entry_by(self, entry_id):
-        deleted_entry = self.find_entry_by(entry_id)
-        self.entries.remove(deleted_entry)
+        entry = self.find_entry_by(entry_id)
+        self.entries.remove(entry)
+
+    def update_entry(self, entry_id, title, body):
+        entry = self.find_entry_by(entry_id)
+        entry.title = title
+        entry.body = body
+
+
 
 
 
