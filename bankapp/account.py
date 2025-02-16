@@ -56,7 +56,7 @@ class Account:
 
     def increase_amount_by(self, amount):
         if self.invalid_amount(amount):
-            raise InvalidAmountException("Insufficient funds")
+            raise InvalidAmountException("Amount cannot be negative or zero")
         self.__balance += amount
 
     def invalid_amount(self, amount):

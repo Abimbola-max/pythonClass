@@ -44,7 +44,7 @@ def main_menu():
             case _:
                 raise InputMisMatchException("Invalid Input")
 
-    except InputMisMatchException:
+    except ValueError:
         print("Invalid input. Please enter a number between 1 and 9.")
         main_menu()
 
@@ -69,25 +69,31 @@ def deposit():
         account_number = int(input("Please enter your account number: "))
         bank.find_account(account_number)
         amount = int(input("Please enter your amount: "))
+        if not account_number or not amount:
+            raise NullPointerException("Fields cannot be empty")
         bank.deposit(amount, account_number)
-        print(f"***** {amount} has been Deposited Successfully*****")
+        print(f"***** {amount}NGN has been Deposited Successfully*****")
     except InvalidAmountException as e:
         print(e)
     except AccountNotFoundException as e:
         print(e)
+    except NullPointerException as e:
+        print("Check inputs, might be empty")
     finally:
         main_menu()
 
 
 def withdraw():
     print("WITHDRAW MONEY")
-    amount = int(input("Enter Amount you'd like to withdraw: "))
-    account_number = int(input("Enter your account number: "))
-    password = input("Enter password: ")
-
     try:
+        amount = int(input("Enter Amount you'd like to withdraw: "))
+        account_number = int(input("Enter your account number: "))
+        password = input("Enter password: ")
+        if not account_number or not amount or not password:
+            raise NullPointerException("Fields cannot be empty")
+
         bank.withdraw(amount, account_number, password)
-        print(f"*****{amount} withdrawn Successfully!*****")
+        print(f"*****{amount}NGN withdrawn Successfully!*****")
     except InsufficientFundException as e:
         print(e)
     except InvalidPasswordException as e:
@@ -96,23 +102,29 @@ def withdraw():
         print("Enter valid input ")
     except AccountNotFoundException as e:
         print(e)
+    except NullPointerException as e:
+        print(e)
     finally:
-        print("\n")
         main_menu()
+
 
 
 def transfer():
-    sender = int(input("Enter Account number of the sender: "))
-    receiver = int(input("Enter Account number of receiver: "))
-    amount = int(input("Enter amount to transfer: "))
-    password = input("Enter your password: ")
-
     try:
-        bank.transfer(sender, receiver, amount, password)
-        print(f"*****{amount} transferred successfully from {sender} to {receiver}*****")
+        sender_account_number = int(input("Enter Account number of the sender: "))
+        receiver_account_number = int(input("Enter Account number of receiver: "))
+        amount = int(input("Enter amount to transfer: "))
+        password = input("Enter your password: ")
+        if not sender_account_number or not receiver_account_number or not amount or not password:
+            raise NullPointerException("Fields cannot be empty")
+
+        bank.transfer(sender_account_number, amount, receiver_account_number, password)
+        print(f"*****{amount}NGN transferred successfully from {sender_account_number} to {receiver_account_number}*****")
     except InsufficientFundException as e:
         print(e)
     except InvalidPasswordException as e:
+        print(e)
+    except NullPointerException as e:
         print(e)
     except ValueError:
         print("Enter valid input ")
@@ -120,19 +132,24 @@ def transfer():
         print(e)
     finally:
         main_menu()
+
 
 
 def check_balance():
     print("BALANCE")
     account_number = int(input("Enter Account Number: "))
     password = input("Enter password: ")
+    if not account_number or not password:
+        raise NullPointerException("Fields cannot be empty")
 
     try:
         balance = bank.check_balance(account_number, password)
-        print(f"Your Account balance is {balance}")
+        print(f"Your Account balance is {balance}NGN")
     except InsufficientFundException as e:
         print(e)
     except InvalidPasswordException as e:
+        print(e)
+    except NullPointerException as e:
         print(e)
     except ValueError:
         print("Enter valid input ")
@@ -147,8 +164,13 @@ def update_password():
         account = bank.find_account(account_number)
         old_password = input("Enter old password: ")
         new_password = input("Enter new password: ")
+        if not account_number or not account or not old_password or not new_password:
+            raise NullPointerException("Fields cannot be empty")
         account.update_password(old_password, new_password)
-    except InsufficientFundException as e:
+        print("Your password has been updated successfully")
+    except InvalidPasswordException as e:
+        print("Passwords don't match")
+    except NullPointerException as e:
         print(e)
     finally:
         main_menu()
@@ -163,13 +185,13 @@ def buy_airtime():
         airtime_input = input("What Airtime would you like to buy?\n1. GLO\n2. AIRTEL\n3. MTN\n4. 9-MOBILE")
         match airtime_input:
             case "1":
-                account.buy_airtime(amount, phone_number, airtime_input, password)
+                bank.buy_airtime(amount, phone_number, airtime_input, password)
             case "2":
-                account.buy_airtime(amount, phone_number, airtime_input, password)
+                bank.buy_airtime(amount, phone_number, airtime_input, password)
             case "3":
-                account.buy_airtime(amount, phone_number, airtime_input, password)
+                bank.buy_airtime(amount, phone_number, airtime_input, password)
             case "4":
-                account.buy_airtime(amount, phone_number, airtime_input, password)
+                bank.buy_airtime(amount, phone_number, airtime_input, password)
     except InsufficientFundException as e:
         print(e)
     except InvalidPasswordException as e:
