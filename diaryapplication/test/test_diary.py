@@ -1,6 +1,6 @@
 import unittest
 
-from bankapp.Exception import NullPointerException
+from bankapp.Exception import NullPointerException, InvalidPasswordException
 from diaryapplication.diary import Diary
 
 
@@ -10,7 +10,9 @@ class MyDiaryTestCase(unittest.TestCase):
         username = "username"
         password = "password"
         my_diary = Diary(username, password)
-
+        self.assertEqual(True, my_diary.is_locked())
+        my_diary.unlock_diary("password")
+        self.assertEqual(False, my_diary.is_locked())
         self.assertEqual(username, my_diary.username)
         self.assertEqual(password, my_diary.password)
 
@@ -26,6 +28,9 @@ class MyDiaryTestCase(unittest.TestCase):
         username = "username"
         password = "password"
         my_diary = Diary(username, password)
+        self.assertEqual(True, my_diary.is_locked())
+        my_diary.unlock_diary("password")
+        self.assertEqual(False, my_diary.is_locked())
         self.assertIsNotNone(username, password)
         my_diary.create_entry("title", "body")
         self.assertEqual(1, my_diary.get_number_of_entries())
@@ -34,6 +39,11 @@ class MyDiaryTestCase(unittest.TestCase):
         my_diary.create_entry("title3", "body3")
         self.assertEqual(3, my_diary.get_number_of_entries())
 
+    def test_that_diary_can_would_not_be_unlocked_with_incorrect_pin(self):
+        my_diary = Diary("username", "password")
+        with self.assertRaises(InvalidPasswordException):
+            my_diary.unlock_diary("pasword")
 
+    # def test_that_my_diary_can_
 
 

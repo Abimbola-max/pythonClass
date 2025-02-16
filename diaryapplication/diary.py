@@ -45,7 +45,7 @@ class Diary:
         return len(self.entries)
 
     def create_entry(self, title: str, body: str):
-        if self.is_locked() == False:
+        if self.is_locked():
             raise LockedStateException("Diary is locked, unlock diary to create entry")
         self.entries.append(Entry(self.generate_id(), title, body))
 
