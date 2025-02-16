@@ -68,7 +68,7 @@ def deposit():
     try:
         account_number = int(input("Please enter your account number: "))
         bank.find_account(account_number)
-        amount = int(input("Please enter your amount: "))
+        amount = int(input("Enter Amount you'd like to deposit: "))
         if not account_number or not amount:
             raise NullPointerException("Fields cannot be empty")
         bank.deposit(amount, account_number)
@@ -185,13 +185,18 @@ def buy_airtime():
         airtime_input = input("What Airtime would you like to buy?\n1. GLO\n2. AIRTEL\n3. MTN\n4. 9-MOBILE")
         match airtime_input:
             case "1":
-                bank.buy_airtime(amount, phone_number, airtime_input, password)
+                account.buy_airtime(amount, phone_number, airtime_input, password)
+                print("airtime purchase is successful")
             case "2":
-                bank.buy_airtime(amount, phone_number, airtime_input, password)
+                account.buy_airtime(amount, phone_number, airtime_input, password)
+                print("airtime purchase is successful")
             case "3":
-                bank.buy_airtime(amount, phone_number, airtime_input, password)
+                account.buy_airtime(amount, phone_number, airtime_input, password)
+                print("airtime purchase is successful")
             case "4":
-                bank.buy_airtime(amount, phone_number, airtime_input, password)
+                account.buy_airtime(amount, phone_number, airtime_input, password)
+                print("airtime purchase is successful")
+
     except InsufficientFundException as e:
         print(e)
     except InvalidPasswordException as e:
@@ -206,7 +211,7 @@ def close_account():
         account_number = int(input("Enter Account Number: "))
         account = bank.find_account(account_number)
         password = input("Enter password: ")
-        account.delete_account(account_number, password)
+        bank.delete_account(account_number, password)
         print("\n*****Account Closed Successfully*****")
     except AccountNotFoundException as e:
         print(e)
