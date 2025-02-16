@@ -31,6 +31,12 @@ class Account:
     def last_name(self):
         return self.__last_name
 
+    @password.setter
+    def password(self, password):
+        if password is None:
+            raise NullPointerException("Password is cannot be empty")
+        self.__password = password
+
     @first_name.setter
     def first_name(self, first_name):
         if first_name.isEmpty():

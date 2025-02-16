@@ -53,32 +53,28 @@ def create_account():
         first_name = input("Please enter your firstname: ")
         last_name = input("Please enter your lastname: ")
         password = input("Please enter password: ")
+        if not first_name or not last_name or not password:
+            raise NullPointerException("Fields cannot be empty")
         account = bank.create_account(first_name, last_name, password)
         print("\n")
         print("*****Account Registered Successfully*****\n")
         print(f"Hello {first_name} {last_name} your account number is {account.account_number}")
-    except NullPointerException:
-        print("Fields cannot be empty")
+    except NullPointerException as e:
+        print("Check inputs, might be empty")
     finally:
         main_menu()
 
 def deposit():
     try:
         account_number = int(input("Please enter your account number: "))
-        account = bank.find_account(account_number)
-        if account is None:
-            raise AccountNotFoundException("Account not found")
-
+        bank.find_account(account_number)
         amount = int(input("Please enter your amount: "))
-        print(account)
-        bank.deposit(account_number, amount)
-        print("*****Account Deposited Successfully*****")
+        bank.deposit(amount, account_number)
+        print(f"***** {amount} has been Deposited Successfully*****")
     except InvalidAmountException as e:
         print(e)
     except AccountNotFoundException as e:
         print(e)
-    except ValueError:
-        print("Invalid amount. Please enter a valid number.")
     finally:
         main_menu()
 
