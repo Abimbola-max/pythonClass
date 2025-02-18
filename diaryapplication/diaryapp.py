@@ -158,7 +158,8 @@ class DiaryApp:
             diary = self.my_diaries.find_by(username)
             password = input("Diary is locked, enter password to unlock: ")
             diary.unlock_diary(password)
-            diary.view_entries()
+            entry = diary.view_entries()
+            print(entry)
         except NotFoundException as e:
             print(f"Error: {e}")
         except LockedStateException as e:
