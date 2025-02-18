@@ -15,6 +15,7 @@ class Diary:
         self.__username = username
         self.__password = password
         self.lock = True
+        self.entry_id = 0
         self.entries = []
 
     def is_locked(self):
@@ -45,15 +46,17 @@ class Diary:
         return len(self.entries)
 
     def create_entry(self, title: str, body: str):
-        if self.is_locked():
-            raise LockedStateException("Diary is locked, unlock diary to create entry")
-        entry_id = self.generate_id()
-        new_entry = Entry(entry_id, title, body)
-        self.entries.append(new_entry)
-        return entry_id
 
-    def generate_id(self):
-        return random.randint(1, 900)
+            if self.is_locked():
+                raise LockedStateException("Diary is locked, unlock diary to create entry")
+            self.entry_id += 1
+            entry_id = self.entry_id
+            new_entry = Entry(entry_id, title, body)
+            self.entries.append(new_entry)
+            return entry_id
+
+    # def generate_id(self):
+    #     return random.randint(1, 900)
 
     def find_entry_by(self, entry_id)->Entry:
         for entry in self.entries:
@@ -70,7 +73,6 @@ class Diary:
         entry = self.find_entry_by(entry_id)
         entry.title = title
         entry.body = body
-
 
 
 
