@@ -10,7 +10,7 @@ class Entry:
         self.__entry_id = entry_id
         self.__title = title
         self.__body = body
-        self.__date = datetime.now()
+        self.__date = datetime.now().strftime("%m/%d/%Y %H:%M:%S")
 
     @property
     def entry_id(self):
@@ -41,4 +41,4 @@ class Entry:
         self.__body = body
 
     def __str__(self):
-        return f"{self.title} {self.body} {self.__date}"
+        return f"title = {self.title} \nbody = {self.body} \ndate = {self.__date}"

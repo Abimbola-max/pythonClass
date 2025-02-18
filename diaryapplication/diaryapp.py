@@ -19,7 +19,7 @@ class DiaryApp:
             4 --> Update Entry
             5 --> Delete Entry
             6 --> View Entries
-            6 --> Exit App
+            7 --> Exit App
         """)
         try:
             choice = input("Kindly enter any choice from the above: ")
@@ -139,7 +139,8 @@ class DiaryApp:
             diary.unlock_diary(password)
 
             entry_id = int(input("Kindly Enter The Unique Id Of The Entry To Find: "))
-            diary.find_entry_by(entry_id)
+            entry = diary.find_entry_by(entry_id)
+            print(f"{entry}")
         except NotFoundException as e:
             print(f"Error: {e}")
         except LockedStateException as e:
@@ -150,10 +151,9 @@ class DiaryApp:
             self.main_menu()
 
 
-
     def welcome(self):
         print("Welcome To AppByMeDiary\n")
-        print("The next page Displays And Help You With Your Choice ?\n")
+        print("The next page Displays And Help You With Your Choice.\n")
 
     def exit(self):
         print("Thank You For Using AppByMeDiary")
