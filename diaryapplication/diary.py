@@ -71,6 +71,9 @@ class Diary:
         entry.title = title
         entry.body = body
 
+    def view_entries(self):
+        return self.entries
+
 
 
 

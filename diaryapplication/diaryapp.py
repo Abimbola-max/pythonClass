@@ -35,6 +35,8 @@ class DiaryApp:
                 case '5':
                     self.delete_entry_by_entry_id()
                 case '6':
+                    self.view_entries()
+                case '7':
                     self.exit()
         except ValueError:
             print("That is not a valid choice.")
@@ -149,6 +151,25 @@ class DiaryApp:
             print(f"Error: {e}")
         finally:
             self.main_menu()
+
+    def view_entries(self):
+        try:
+            username = input("Kindly Enter Your Username: ")
+            diary = self.my_diaries.find_by(username)
+            password = input("Diary is locked, enter password to unlock: ")
+            diary.unlock_diary(password)
+            diary.view_entries()
+        except NotFoundException as e:
+            print(f"Error: {e}")
+        except LockedStateException as e:
+            print(f"Error: {e}")
+        except InvalidPasswordException as e:
+            print(f"Error: {e}")
+        except NullPointerException as e:
+            print(f"Input Error: {e}")
+        finally:
+            self.main_menu()
+
 
 
     def welcome(self):
