@@ -2,7 +2,6 @@ import sys
 
 from bankapp.Exception import NullPointerException, InvalidPasswordException
 from diaryapplication.diaries import Diaries
-from diaryapplication.diary import Diary
 from diaryapplication.exception import LockedStateException, NotFoundException
 
 
@@ -19,6 +18,7 @@ class DiaryApp:
             3 --> Find Entry By Id
             4 --> Update Entry
             5 --> Delete Entry
+            6 --> View Entries
             6 --> Exit App
         """)
         try:
@@ -113,7 +113,7 @@ class DiaryApp:
         finally:
             self.main_menu()
 
-    def delete_entry_by(self):
+    def delete_entry_by_entry_id(self):
         try:
             username = input("Kindly Enter Your Username: ")
             diary = self.my_diaries.find_by(username)
@@ -130,6 +130,26 @@ class DiaryApp:
             print(f"Error: {e}")
         finally:
             self.main_menu()
+
+    def find_entry_by_entry_id(self):
+        try:
+            username = input("Kindly Enter Your Username: ")
+            diary = self.my_diaries.find_by(username)
+            password = input("Diary is locked, enter password to unlock: ")
+            diary.unlock_diary(password)
+
+            entry_id = int(input("Kindly Enter The Unique Id Of The Entry To Find: "))
+            diary.find_entry_by(entry_id)
+        except NotFoundException as e:
+            print(f"Error: {e}")
+        except LockedStateException as e:
+            print(f"Error: {e}")
+        except InvalidPasswordException as e:
+            print(f"Error: {e}")
+        finally:
+            self.main_menu()
+
+
 
     def welcome(self):
         print("Welcome To AppByMeDiary\n")

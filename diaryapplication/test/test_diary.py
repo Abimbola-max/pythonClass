@@ -1,4 +1,5 @@
 import unittest
+from datetime import datetime
 
 from bankapp.Exception import NullPointerException, InvalidPasswordException
 from diaryapplication.diary import Diary
@@ -93,6 +94,7 @@ class MyDiaryTestCase(unittest.TestCase):
         my_diary.unlock_diary("password")
         self.assertEqual(False, my_diary.is_locked())
         entry_id_one = my_diary.create_entry("fish", "protein")
+        set_date = datetime.now().strftime("%m/%d/%Y")
         entry_id_two = my_diary.create_entry("beef", "meat")
         my_diary.update_entry(entry_id_one, "is good", "is good also")
         self.assertEqual(2, my_diary.get_number_of_entries())

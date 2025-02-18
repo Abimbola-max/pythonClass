@@ -1,3 +1,6 @@
+from datetime import datetime
+from xmlrpc.client import DateTime
+
 from bankapp.Exception import NullPointerException
 
 
@@ -7,6 +10,7 @@ class Entry:
         self.__entry_id = entry_id
         self.__title = title
         self.__body = body
+        self.__date = datetime.now()
 
     @property
     def entry_id(self):
@@ -37,4 +41,4 @@ class Entry:
         self.__body = body
 
     def __str__(self):
-        return f"{self.title} {self.body}"
+        return f"{self.title} {self.body} {self.__date}"
