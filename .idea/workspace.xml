@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d7976368-a159-4439-8a37-7b885d3b3eb2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryapplication/diary.py" beforeDir="false" afterPath="$PROJECT_DIR$/diaryapplication/diary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diaryapplication/diaryapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/diaryapplication/diaryapp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +66,7 @@
       <recent name="C:\Users\DELL\Documents\pythonClass\diaryapplication" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_diary.MyDiaryTestCase">
+  <component name="RunManager">
     <configuration name="diaryapp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
@@ -181,7 +180,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739709593566</updated>
-      <workItem from="1739709594652" duration="17334000" />
+      <workItem from="1739709594652" duration="17742000" />
     </task>
     <servers />
   </component>
@@ -189,7 +188,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonClass$diaryapp.coverage" NAME="diaryapp Coverage Results" MODIFIED="1739861690111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diaryapplication" />
     <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1739862313968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diaryapplication/test" />
+    <SUITE FILE_PATH="coverage/pythonClass$diaryapp.coverage" NAME="diaryapp Coverage Results" MODIFIED="1739862654191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diaryapplication" />
   </component>
 </project>

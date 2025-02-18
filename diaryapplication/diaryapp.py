@@ -81,33 +81,60 @@ class DiaryApp:
             self.main_menu()
 
     def update_entry(self):
-        entry_id = input("Kindly Enter The Unique Id Of The Entry To Update: ")
-        new_title = input("Kindly Enter The New Title Of The Entry: ")
-        new_body = input("Kindly Enter The New Body Of The Entry: ")
         try:
-            self.my_diary.update_entry(int(entry_id), new_title, new_body)
-            print("Entry updated successfully.")
+            username = input("Kindly Enter your username: ")
+            diary = self.my_diaries.find_by(username)
+
+            password = input("Diary is locked, enter password to unlock: ")
+            diary.unlock_diary(password)
+
+            entry_id = int(input("Kindly Enter The Unique Id Of The Entry To Update: "))
+            new_title = input("Kindly Enter The New Title Of The Entry: ")
+            new_body = input("Kindly Enter The New Body Of The Entry: ")
+
+            if not new_title or not new_body:
+                raise NullPointerException("Title and body cannot be empty")
+
+            if diary.update_entry(int(entry_id), new_title, new_body):
+                print("Entry updated successfully.")
+            else:
+                print(f"Entry with id {entry_id} not found")
+
+        except NotFoundException as e:
+            print(f"Error: {e}")
+        except LockedStateException as e:
+            print(f"Error: {e}")
+        except InvalidPasswordException as e:
+            print(f"Error: {e}")
+        except NullPointerException as e:
+            print(f"Input Error: {e}")
         except Exception as e:
-            print(e)
+            print(f"An unexpected error occurred: {e}")
         finally:
             self.main_menu()
 
     def delete_entry_by(self):
         try:
             username = input("Kindly Enter Your Username: ")
+            diary = self.my_diaries.find_by(username)
+
+            password = input("Diary is locked, enter password to unlock: ")
+            diary.unlock_diary(password)
+
             entry_id = int(input("Kindly Enter The Unique Id Of The Entry To Delete: "))
-            entry = self.my_diaries.find_by(username)
-            entry.delete_entry_by(entry_id)
+
+            diary.delete_entry_by(entry_id)
+
             print(f"Entry {entry_id} deleted successfully.")
         except NotFoundException as e:
             print(f"Error: {e}")
         finally:
             self.main_menu()
-    #
+
     def welcome(self):
         print("Welcome To AppByMeDiary\n")
         print("The next page Displays And Help You With Your Choice ?\n")
-    #
+
     def exit(self):
         print("Thank You For Using AppByMeDiary")
         sys.exit(0)
