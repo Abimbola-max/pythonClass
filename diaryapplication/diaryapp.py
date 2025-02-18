@@ -65,21 +65,20 @@ class DiaryApp:
             body = input("Kindly Enter The Body Of The Entry: ")
 
             if not title or not body:
-                raise ValueError("Title and body cannot be empty")
+                raise NullPointerException("Title and body cannot be empty")
 
             entry_id = diary.create_entry(title, body)
             print(f"Entry created successfully.\nYour entry Id is {entry_id}")
-            self.main_menu()
         except NotFoundException as e:
             print(f"Error: {e}")
         except LockedStateException as e:
             print(f"Error: {e}")
         except InvalidPasswordException as e:
             print(f"Error: {e}")
-        except ValueError as e:
+        except NullPointerException as e:
             print(f"Input Error: {e}")
-        except Exception as e:
-            print(f"An unexpected error occurred: {e}")
+        finally:
+            self.main_menu()
 
     def update_entry(self):
         entry_id = input("Kindly Enter The Unique Id Of The Entry To Update: ")

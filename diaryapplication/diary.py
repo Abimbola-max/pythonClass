@@ -55,9 +55,6 @@ class Diary:
             self.entries.append(new_entry)
             return entry_id
 
-    # def generate_id(self):
-    #     return random.randint(1, 900)
-
     def find_entry_by(self, entry_id)->Entry:
         for entry in self.entries:
             if entry.entry_id == entry_id:
