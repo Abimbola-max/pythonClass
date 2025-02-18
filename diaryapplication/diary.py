@@ -72,7 +72,7 @@ class Diary:
         entry.body = body
 
     def view_entries(self):
-        return self.entries
+        return self.entries.__str__()
 
 
 

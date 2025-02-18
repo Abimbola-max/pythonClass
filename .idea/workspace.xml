@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d7976368-a159-4439-8a37-7b885d3b3eb2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diaryapplication/diary.py" beforeDir="false" afterPath="$PROJECT_DIR$/diaryapplication/diary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diaryapplication/diaryapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/diaryapplication/diaryapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryapplication/entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/diaryapplication/entry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diaryapplication/test/test_diary.py" beforeDir="false" afterPath="$PROJECT_DIR$/diaryapplication/test/test_diary.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +50,7 @@
     "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_my_diary_can_create_entries_and_return_number_of_entries.executor": "Run",
     "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_my_diary_can_throw_null_exception_if_password_field_is_empty.executor": "Run",
     "Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_my_diary_can_throw_null_exception_if_username_field_is_empty.executor": "Run",
+    "Python.diary.executor": "Run",
     "Python.diaryapp.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -68,7 +68,7 @@
       <recent name="C:\Users\DELL\Documents\pythonClass\diaryapplication" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_find_entry_by_entry_id">
+  <component name="RunManager" selected="Python.diaryapp">
     <configuration name="diaryapp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
@@ -158,10 +158,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_find_entry_by_entry_id" />
-        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase" />
-        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_update_entry_find_and_retruns_size" />
         <item itemvalue="Python.diaryapp" />
+        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase" />
+        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_find_entry_by_entry_id" />
+        <item itemvalue="Python tests.Python tests for test_diary.MyDiaryTestCase.test_that_diary_can_update_entry_find_and_retruns_size" />
         <item itemvalue="Python tests.Python tests for test_diaries.MyDiariesTestCase" />
       </list>
     </recent_temporary>
@@ -182,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739709593566</updated>
-      <workItem from="1739709594652" duration="21065000" />
+      <workItem from="1739709594652" duration="22805000" />
     </task>
     <servers />
   </component>
@@ -190,7 +190,8 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonClass$diaryapp.coverage" NAME="diaryapp Coverage Results" MODIFIED="1739867232955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diaryapplication" />
-    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1739867791604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diaryapplication/test" />
+    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1739868583775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diaryapplication/test" />
+    <SUITE FILE_PATH="coverage/pythonClass$diaryapp.coverage" NAME="diaryapp Coverage Results" MODIFIED="1739869697992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diaryapplication" />
+    <SUITE FILE_PATH="coverage/pythonClass$diary.coverage" NAME="diary Coverage Results" MODIFIED="1739869349881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diaryapplication" />
   </component>
 </project>
