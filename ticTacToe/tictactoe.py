@@ -48,4 +48,9 @@ class TicTacToe:
         return True
 
 
+    def print_board(self):
+        for i in range(3):
+            pri
+
+
 

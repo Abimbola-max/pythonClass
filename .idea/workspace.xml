@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e81610a3-d2dd-4d2c-bd18-8dea1625c29e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/multipleTask/multipleofnumbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multipleTask/test_multipleofnumbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonClass.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonClass.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticTacToe/test/test_tictactoe.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticTacToe/test/test_tictactoe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticTacToe/tictactoe.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticTacToe/tictactoe.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_multipleofnumbers.MyMultipleOfNumbersTestCase.executor": "Run",
     "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.executor": "Run",
     "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_a_player_loses_the_game.executor": "Run",
     "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_a_player_wins_the_game.executor": "Run",
@@ -55,7 +58,23 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase">
+  <component name="RunManager" selected="Python tests.Python tests for test_multipleofnumbers.MyMultipleOfNumbersTestCase">
+    <configuration name="Python tests for test_multipleofnumbers.MyMultipleOfNumbersTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonClass" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/multipleTask" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_multipleofnumbers.MyMultipleOfNumbersTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_tictactoe.MyTicTacToeTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
@@ -69,22 +88,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_tictactoe.MyTicTacToeTestCase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_a_player_loses_the_game" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonClass" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ticTacToe/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tictactoe.MyTicTacToeTestCase.test_that_a_player_loses_the_game&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -138,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_multipleofnumbers.MyMultipleOfNumbersTestCase" />
         <item itemvalue="Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase" />
         <item itemvalue="Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_there_is_draw_o_winner_or_loser" />
         <item itemvalue="Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_there_is_draw_no_winner_or_loser" />
         <item itemvalue="Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_a_player_wins_the_game" />
-        <item itemvalue="Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_a_player_loses_the_game" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +167,9 @@
       <updated>1740125102038</updated>
       <workItem from="1740125103210" duration="1117000" />
       <workItem from="1740515353481" duration="11994000" />
+      <workItem from="1740556250424" duration="1315000" />
+      <workItem from="1740559431237" duration="625000" />
+      <workItem from="1740577694458" duration="424000" />
     </task>
     <servers />
   </component>
