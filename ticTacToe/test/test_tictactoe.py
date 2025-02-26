@@ -8,12 +8,6 @@ from ticTacToe.tictactoe import TicTacToe
 
 class MyTicTacToeTestCase(unittest.TestCase):
 
-    board = [
-        [Char.char_empty, Char.char_empty, Char.char_empty],
-        [Char.char_empty, Char.char_empty, Char.char_empty],
-        [Char.char_empty, Char.char_empty, Char.char_empty]
-    ]
-
     def test_that_first_player_is_player_one_and_plays_x(self):
         first_player = Player(1, Char.char_x.value)
         self.assertEqual(1, first_player.player_id)
@@ -48,7 +42,40 @@ class MyTicTacToeTestCase(unittest.TestCase):
         winner = game.check_winner()
         self.assertTrue(first_player, winner)
 
-    def
+    def test_that_there_is_draw_no_winner_or_loser(self):
+        first_player = Player(1, Char.char_x.value)
+        second_player = Player(2, Char.char_o.value)
+
+        game = TicTacToe(first_player, second_player)
+
+        game.make_move(0, 0)
+        game.make_move(0, 1)
+        game.make_move(0, 2)
+        game.make_move(1, 0)
+        game.make_move(1, 1)
+        game.make_move(1, 2)
+        game.make_move(2, 0)
+        game.make_move(2, 1)
+        game.make_move(2, 2)
+        self.assertTrue(game.is_game_board_full())
+
+    def test_that_there_is_draw_no_winner_or_loser_double_check(self):
+        first_player = Player(1, Char.char_x.value)
+        second_player = Player(2, Char.char_o.value)
+
+        game = TicTacToe(first_player, second_player)
+
+        game.make_move(0, 0)
+        game.make_move(0, 1)
+        game.make_move(0, 2)
+        game.make_move(1, 0)
+        game.make_move(1, 2)
+        game.make_move(2, 0)
+        game.make_move(2, 1)
+        game.make_move(2, 2)
+        self.assertFalse(game.is_game_board_full())
+        game.make_move(1, 1)
+        self.assertTrue(game.is_game_board_full())
 
 
 

@@ -25,7 +25,7 @@ class TicTacToe:
 
     def switch_player(self):
         if self.__current_player == self.__player1:
-            self.current_player = self.__player2
+            self.__current_player = self.__player2
         else:
             self.__current_player = self.__player1
 
@@ -40,3 +40,12 @@ class TicTacToe:
         if self.__board[0][2] == check and self.__board[1][1] == check and self.__board[2][0] == check: return True
 
         return False
+
+    def is_game_board_full(self):
+        for i in range(3):
+            for j in range(3):
+                if self.__board[i][j] == Char.char_empty: return False
+        return True
+
+
+
