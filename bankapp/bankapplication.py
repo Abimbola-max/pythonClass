@@ -201,7 +201,6 @@ def buy_airtime():
             "3": "MTN",
             "4": "9-MOBILE"
         }
-
         airtime_provider = airtime_providers.get(airtime_input)
         if not airtime_provider:
             raise ValueError("Invalid airtime selection.")

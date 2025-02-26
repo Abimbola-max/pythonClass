@@ -2,6 +2,8 @@ from bankapp.Exception import NullPointerException, InvalidPasswordException, In
     InsufficientFundException, IncompletePhoneNumberException
 
 
+
+
 class Account:
 
     def __init__(self, account_number, first_name, last_name, password):

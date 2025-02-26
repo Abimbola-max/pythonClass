@@ -2,10 +2,9 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/diaryapplication/test" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <sourceFolder url="file://$MODULE_DIR$/ticTacToe/test" isTestSource="true" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (pythonClass) (5)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Pipenv (pythonClass)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
