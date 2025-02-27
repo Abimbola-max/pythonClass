@@ -1,6 +1,6 @@
 def get_multiple_of_numbers(first_one, second_num, third_number):
     result = []
-    while third_number < second_number:
+    while third_number < second_num:
         answer = third_number * third_number
         result.append(answer)
 

@@ -1,4 +1,3 @@
-from ticTacToe import char
 from ticTacToe.char import Char
 from ticTacToe.exceptions.tictactoeexceptions import FullCellsException
 
@@ -47,10 +46,17 @@ class TicTacToe:
                 if self.__board[i][j] == Char.char_empty: return False
         return True
 
-
     def print_board(self):
         for i in range(3):
-            pri
+            for j in range(3):
+                print(self.__board[i][j], end="")
+                if j < 2:
+                    print("|", end="")
+            print()
+            if i < 2:
+                print("-+-+-")
+
+        print()
 
 
 
