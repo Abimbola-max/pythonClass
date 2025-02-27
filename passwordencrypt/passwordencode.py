@@ -11,8 +11,8 @@ def save_to_file(username, hashed_password):
 
 def register_user():
     while True:
-        username = input('Enter username: ')
-        if not username:
+        email = input('Enter email: ')
+        if not email:
             print('Username cannot be blank')
             continue
         break
@@ -24,8 +24,14 @@ def register_user():
             continue
         break
 
-    save_to_file(username, hash_passwrd(password))
+    save_to_file(email, hash_passwrd(password))
 
+def validate_email(email):
+    with open('user_details.txt', 'r') as file:
+        for line in file:
+            stored_email, stored_password = line.split(':').split('')
+            if stored_email == email:
+                return bcrypt.checkpw(password.encode('utf-8'), stored_password.encode('utf-8'))
 
 def validate_username(username, password):
     with open(USER_DETAILS, 'r') as file:
@@ -36,9 +42,9 @@ def validate_username(username, password):
 
 
 def login_user():
-    username = input("Enter username: ")
+    email = input("Enter email: ")
     password = input("Enter password: ")
-    if validate_username(username, password):
+    if validate_username(email, password):
         print('Login successful')
     else:
         print('Invalid credentials')

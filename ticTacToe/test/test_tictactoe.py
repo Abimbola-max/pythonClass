@@ -3,7 +3,7 @@ import unittest
 from ticTacToe.char import Char
 from ticTacToe.exceptions.tictactoeexceptions import InvalidPlayerIdException
 from ticTacToe.player import Player
-from ticTacToe.tictactoe import TicTacToe
+from ticTacToe.board import Board
 
 
 class MyTicTacToeTestCase(unittest.TestCase):
@@ -31,7 +31,7 @@ class MyTicTacToeTestCase(unittest.TestCase):
     def test_that_a_player_wins_the_game(self):
         first_player = Player(1, Char.char_x.value)
         second_player = Player(2, Char.char_o.value)
-        game = TicTacToe(first_player, second_player)
+        game = Board(first_player, second_player)
 
         game.make_move(0, 0)
         game.make_move(1, 0)
@@ -46,7 +46,7 @@ class MyTicTacToeTestCase(unittest.TestCase):
         first_player = Player(1, Char.char_x.value)
         second_player = Player(2, Char.char_o.value)
 
-        game = TicTacToe(first_player, second_player)
+        game = Board(first_player, second_player)
 
         game.make_move(0, 0)
         game.make_move(0, 1)
@@ -63,7 +63,7 @@ class MyTicTacToeTestCase(unittest.TestCase):
         first_player = Player(1, Char.char_x.value)
         second_player = Player(2, Char.char_o.value)
 
-        game = TicTacToe(first_player, second_player)
+        game = Board(first_player, second_player)
 
         game.make_move(0, 0)
         game.make_move(0, 1)

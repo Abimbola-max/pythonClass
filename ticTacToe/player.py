@@ -1,6 +1,5 @@
-from ticTacToe import char
 from ticTacToe.char import Char
-from ticTacToe.exceptions.tictactoeexceptions import InvalidPlayerIdException
+from ticTacToe.exceptions.tictactoeexceptions import InvalidPlayerIdException, InvalidCharacterIdException
 
 
 class Player:
@@ -29,7 +28,7 @@ class Player:
 
     def __validate_char(self,char_name):
         if char_name not in [Char.char_x.value, Char.char_o.value, Char.char_empty.value]:
-            raise InvalidPlayerIdException("Character must be X or O or empty")
+            raise InvalidCharacterIdException("Character must be X or O or empty")
         return True
 
 

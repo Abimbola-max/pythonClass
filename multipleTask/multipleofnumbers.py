@@ -1,13 +1,7 @@
-def get_multiple_of_numbers(first_one, second_num, third_number):
+def get_multiple_of_numbers(first_number, second_number, third_number):
     result = []
-    while third_number < second_num:
-        answer = third_number * third_number
-        result.append(answer)
 
+    for i in range(first_number, second_number + 1):
+        if i % third_number == 0:
+            result.append(i)
     return result
-
-first_one = 1
-second_num = 10
-third_number = 2
-
-print(get_multiple_of_numbers(first_one, second_num, third_number))

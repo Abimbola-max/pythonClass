@@ -1,8 +1,8 @@
 from ticTacToe.char import Char
-from ticTacToe.exceptions.tictactoeexceptions import FullCellsException
+from ticTacToe.exceptions.tictactoeexceptions import FullCellsException, InvalidCharacterIdException
 
 
-class TicTacToe:
+class Board:
 
     def __init__(self, player1, player2):
         self.__player1 = player1
@@ -12,15 +12,27 @@ class TicTacToe:
                 [Char.char_empty, Char.char_empty, Char.char_empty],
                 [Char.char_empty, Char.char_empty, Char.char_empty]
         ]
-        self.players = [player1, player2]
+        self.__players = [player1, player2]
         self.__current_player = player1
 
+    def currentPlayer(self):
+        return self.__current_player
+
+    def player(self):
+        return self.__players
+
     def make_move(self, row, column):
-        if self.__board[row][column] == Char.char_empty:
+        if row >= 0 and row < 3 and column >= 0 and column < 3 and self.__board[row][column] == Char.char_empty:
             self.__board[row][column] = self.__current_player.char
-            self.switch_player()
+            self.print_board()
+            if self.check_winner():
+                return "Player " + self.__current_player.player_id + " won!"
+            elif self.is_game_board_full():
+                return "It is a tie!"
+            else:
+                self.switch_player()
         else:
-            raise FullCellsException("Cell is already occupied")
+            raise InvalidCharacterIdException("Don't waste my time!")
 
     def switch_player(self):
         if self.__current_player == self.__player1:
