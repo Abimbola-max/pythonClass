@@ -6,7 +6,7 @@ class Board:
     def __init__(self, player1, player2):
         self.__player1 = player1
         self.__player2 = player2
-        self.__board = [[" " for _ in range(3)] for _ in range(3)]
+        self.__board = [[" " for row in range(3)] for column in range(3)]
         # self.__board = [
         #         [Char.empty, Char.empty, Char.empty],
         #         [Char.empty, Char.empty, Char.empty],
@@ -37,7 +37,7 @@ class Board:
             print("Invalid row or column.")
             return False
 
-        self.__board[row][column] = self.__current_player.char_value.value
+        self.__board[row][column] = self.__current_player.char.value
         self.print_board()
 
         if self.check_winner():
@@ -81,8 +81,8 @@ class Board:
     def is_game_board_full(self):
         for i in range(3):
             for j in range(3):
-                if self.__board[i][j] == Char.empty.value: return False
-        return True
+                if self.__board[i][j] == Char.empty.value:
+                    return True
 
     def reset_board(self):
         self.__board = [[Char.empty.value, Char.empty.value, Char.empty.value],
@@ -103,7 +103,7 @@ class Board:
                 print(self.__board[i][j], end=" | ")
             print()
             if i < 2:
-                print("--+--+--")
+                print("--+---+--")
 
         print()
 

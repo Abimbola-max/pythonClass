@@ -1,5 +1,5 @@
 from ticTacToeTasks.charvalue import Char
-from ticTacToeTasks.tictactoeexceptions import InvalidCharacterIdException, InvalidPlayerIdException
+from ticTacToeTask.tictactoeexceptions import InvalidCharacterIdException, InvalidPlayerIdException
 
 
 class Player:

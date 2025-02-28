@@ -3,7 +3,7 @@ from typing import Tuple
 from ticTacToeTasks.board import Board
 from ticTacToeTasks.charvalue import Char
 from ticTacToeTasks.player import Player
-from ticTacToeTasks.tictactoeexceptions import InvalidCharacterIdException
+from ticTacToeTask.tictactoeexceptions import InvalidCharacterIdException
 
 
 class Main:
