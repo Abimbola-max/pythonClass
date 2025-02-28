@@ -33,6 +33,7 @@ class Board:
             print("Game is over.")
             return True
 
+
         if not row >= 0 and row < 3 and column >= 0 and column < 3 and self.__board[row][column] == Char.empty:
             print("Invalid row or column.")
             return False
