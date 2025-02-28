@@ -24,13 +24,6 @@ class MyStringTestCase(unittest.TestCase):
         actual = 'xyc abz'
         self.assertEqual(expected, actual)
 
-    # def test_that_string_can_be_swapped_and_stripped_two(self):
-    #     first_input_string = 'abc'
-    #     second_input_string = 'xyz'
-    #     expected = swap_string_and_strip_two(first_input_string, second_input_string)
-    #     actual = 'xyc abz'
-    #     self.assertEqual(expected, actual)
-
     def test_that_word_ce_can_be_added_to_the_middle_of_a_string(self):
         input_string = 'helloo'
         second_input = "ce"
