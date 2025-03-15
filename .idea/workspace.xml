@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e81610a3-d2dd-4d2c-bd18-8dea1625c29e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/classTask/stringsTask/stringmethods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classTask/stringsTask/test/test_stringmethods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCMS/exceptions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCMS/exceptions/exception.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCMS/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCMS/src/course.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCMS/src/teacher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCMS/src/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCMS/src/validator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCMS/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCMS/tests/test_teacher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticTacToeTask/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/pythonClass.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonClass.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/passwordencrypt/passwordencode.py" beforeDir="false" afterPath="$PROJECT_DIR$/passwordencrypt/passwordencode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticTacToe/tictactoeapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticTacToe/tictactoeapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticTacToeTask/char.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticTacToeTask/char.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticTacToeTask/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticTacToeTask/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticTacToeTask/test/test_tictactoe.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticTacToeTask/test/test_tictactoe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticTacToeTask/tictactoe.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticTacToeTask/tictactoe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticTacToeTask/tictactoeexceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticTacToeTask/tictactoeexceptions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +50,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Python tests for test_multipleofnumbers.MyMultipleOfNumbersTestCase.executor": "Run",
+    "Python tests.Python tests for test_multipleofnumbers.MyMultipleOfNumbersTestCase.test_that_my_multiple_of_number_2.executor": "Run",
+    "Python tests.Python tests for test_player.MyPlayerTestCase.executor": "Run",
+    "Python tests.Python tests for test_player.MyPlayerTestCase.test_that_repetition_of_player_name_would_throw_error.executor": "Run",
+    "Python tests.Python tests for test_player.MyPlayerTestCase.test_that_two_players_can_exist.executor": "Run",
     "Python tests.Python tests for test_stringmethods.MyStringTestCase.executor": "Run",
     "Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_function_removes_any_special_characters_from_the_string.executor": "Run",
     "Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_string_can_be_swapped_and_stripped.executor": "Run",
@@ -47,6 +62,14 @@
     "Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_word_and_character_as_parameters_return_a_tuple.executor": "Run",
     "Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_word_can_take_mixed_cases_and_return_words_arranged_in_mixed_cases.executor": "Run",
     "Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_word_ce_can_be_added_to_the_middle_of_a_string.executor": "Run",
+    "Python tests.Python tests for test_tictactoe.MyGameTestCase.executor": "Run",
+    "Python tests.Python tests for test_tictactoe.MyTestCase.executor": "Run",
+    "Python tests.Python tests for test_tictactoe.MyTestCase.test_that_a_player_can_not_play_in_a_cell_that_is_already_occupied.executor": "Run",
+    "Python tests.Python tests for test_tictactoe.MyTestCase.test_that_a_player_cannot_play_in_a_cell_that_is_already_occupied.executor": "Run",
+    "Python tests.Python tests for test_tictactoe.MyTestCase.test_that_creation_of_tic_tac_toe_game_with_2_player_is_valid.executor": "Run",
+    "Python tests.Python tests for test_tictactoe.MyTestCase.test_that_i_can_get_current_player.executor": "Run",
+    "Python tests.Python tests for test_tictactoe.MyTestCase.test_to_ensure_that_the_game_has_a_score_board_that_is_initialized_correctly_with_an_empty.executor": "Run",
+    "Python tests.Python tests for test_tictactoe.MyTestCase.test_to_ensure_that_the_game_has_a_score_board_that_is_initialized_correctly_with_an_empty_string.executor": "Run",
     "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.executor": "Run",
     "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_a_player_loses_the_game.executor": "Run",
     "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_a_player_wins_the_game.executor": "Run",
@@ -54,12 +77,16 @@
     "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_there_is_draw_no_winner_or_loser.executor": "Run",
     "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_there_is_draw_o_winner_or_loser.executor": "Run",
     "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_tictactoe_game_is_created_and_players_more_than_two_throws_exceptions.executor": "Run",
+    "Python.board.executor": "Run",
     "Python.claud.executor": "Run",
     "Python.main.executor": "Run",
     "Python.multipleofnumbers.executor": "Run",
+    "Python.tictactoeapp.executor": "Run",
+    "Python.tictactoeexceptions.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/DELL/Documents/pythonClass/SCMS/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,98 +96,104 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Documents\pythonClass\SCMS\src" />
+      <recent name="C:\Users\DELL\Documents\pythonClass\SCMS\exceptions" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Documents\pythonClass\ticTacToeTask" />
+      <recent name="C:\Users\DELL\Documents\pythonClass\ticTacToe" />
       <recent name="C:\Users\DELL\Documents\pythonClass\classTask" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_string_methods_can_count_occurrence">
-    <configuration name="Python tests for test_stringmethods.MyStringTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_tictactoe.MyTestCase">
+    <configuration name="Python tests for test_tictactoe.MyTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classTask/stringsTask/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ticTacToeTask/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_stringmethods.MyStringTestCase&quot;" />
+      <option name="_new_target" value="&quot;test_tictactoe.MyTestCase&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_stringmethods.MyStringTestCase.test_that_function_removes_any_special_characters_from_the_string" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_tictactoe.MyTestCase.test_that_a_player_can_not_play_in_a_cell_that_is_already_occupied" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classTask/stringsTask/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ticTacToeTask/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_stringmethods.MyStringTestCase.test_that_function_removes_any_special_characters_from_the_string&quot;" />
+      <option name="_new_target" value="&quot;test_tictactoe.MyTestCase.test_that_a_player_can_not_play_in_a_cell_that_is_already_occupied&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_stringmethods.MyStringTestCase.test_that_string_methods_can_count_occurrence" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_tictactoe.MyTestCase.test_that_a_player_cannot_play_in_a_cell_that_is_already_occupied" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classTask/stringsTask/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ticTacToeTask/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_stringmethods.MyStringTestCase.test_that_string_methods_can_count_occurrence&quot;" />
+      <option name="_new_target" value="&quot;test_tictactoe.MyTestCase.test_that_a_player_cannot_play_in_a_cell_that_is_already_occupied&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_stringmethods.MyStringTestCase.test_that_string_methods_can_count_occurrence_two" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_tictactoe.MyTestCase.test_that_i_can_get_current_player" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classTask/stringsTask/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ticTacToeTask/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_stringmethods.MyStringTestCase.test_that_string_methods_can_count_occurrence_two&quot;" />
+      <option name="_new_target" value="&quot;test_tictactoe.MyTestCase.test_that_i_can_get_current_player&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_stringmethods.MyStringTestCase.test_that_word_ce_can_be_added_to_the_middle_of_a_string" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_tictactoe.MyTestCase.test_to_ensure_that_the_game_has_a_score_board_that_is_initialized_correctly_with_an_empty_string" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonClass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classTask/stringsTask/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ticTacToeTask/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_stringmethods.MyStringTestCase.test_that_word_ce_can_be_added_to_the_middle_of_a_string&quot;" />
+      <option name="_new_target" value="&quot;test_tictactoe.MyTestCase.test_to_ensure_that_the_game_has_a_score_board_that_is_initialized_correctly_with_an_empty_string&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_string_methods_can_count_occurrence" />
-        <item itemvalue="Python tests.Python tests for test_stringmethods.MyStringTestCase" />
-        <item itemvalue="Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_word_ce_can_be_added_to_the_middle_of_a_string" />
-        <item itemvalue="Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_string_methods_can_count_occurrence_two" />
-        <item itemvalue="Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_function_removes_any_special_characters_from_the_string" />
+        <item itemvalue="Python tests.Python tests for test_tictactoe.MyTestCase" />
+        <item itemvalue="Python tests.Python tests for test_tictactoe.MyTestCase.test_that_a_player_cannot_play_in_a_cell_that_is_already_occupied" />
+        <item itemvalue="Python tests.Python tests for test_tictactoe.MyTestCase.test_that_a_player_can_not_play_in_a_cell_that_is_already_occupied" />
+        <item itemvalue="Python tests.Python tests for test_tictactoe.MyTestCase.test_that_i_can_get_current_player" />
+        <item itemvalue="Python tests.Python tests for test_tictactoe.MyTestCase.test_to_ensure_that_the_game_has_a_score_board_that_is_initialized_correctly_with_an_empty_string" />
       </list>
     </recent_temporary>
   </component>
@@ -187,6 +220,10 @@
       <workItem from="1740577694458" duration="424000" />
       <workItem from="1740578419486" duration="628000" />
       <workItem from="1740625882475" duration="15062000" />
+      <workItem from="1740662266208" duration="53371000" />
+      <workItem from="1740851657056" duration="248000" />
+      <workItem from="1741953031501" duration="23000" />
+      <workItem from="1741959405186" duration="3037000" />
     </task>
     <servers />
   </component>
@@ -194,9 +231,12 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1740659830530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classTask/stringsTask/test" />
+    <SUITE FILE_PATH="coverage/pythonClass$.coverage" NAME=" Coverage Results" MODIFIED="1740851487133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ticTacToeTask/test" />
+    <SUITE FILE_PATH="coverage/pythonClass$tictactoeexceptions.coverage" NAME="tictactoeexceptions Coverage Results" MODIFIED="1740672427804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ticTacToe/exceptions" />
+    <SUITE FILE_PATH="coverage/pythonClass$board.coverage" NAME="board Coverage Results" MODIFIED="1740666258040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ticTacToe" />
+    <SUITE FILE_PATH="coverage/pythonClass$tictactoeapp.coverage" NAME="tictactoeapp Coverage Results" MODIFIED="1740750809427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ticTacToe" />
     <SUITE FILE_PATH="coverage/pythonClass$claud.coverage" NAME="claud Coverage Results" MODIFIED="1740530044915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ticTacToe" />
-    <SUITE FILE_PATH="coverage/pythonClass$main.coverage" NAME="main Coverage Results" MODIFIED="1740126111158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonClass$multipleofnumbers.coverage" NAME="multipleofnumbers Coverage Results" MODIFIED="1740578441756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multipleTask" />
+    <SUITE FILE_PATH="coverage/pythonClass$main.coverage" NAME="main Coverage Results" MODIFIED="1740752774048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ticTacToeTask" />
+    <SUITE FILE_PATH="coverage/pythonClass$multipleofnumbers.coverage" NAME="multipleofnumbers Coverage Results" MODIFIED="1740670382477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multipleTask" />
   </component>
 </project>

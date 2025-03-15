@@ -5,6 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/multipleTask" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ticTacToe/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/classTask/stringsTask/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ticTacToeTask/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ticTacToeTasks/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/SCMS/tests" isTestSource="true" />
     </content>
     <orderEntry type="jdk" jdkName="Pipenv (pythonClass)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

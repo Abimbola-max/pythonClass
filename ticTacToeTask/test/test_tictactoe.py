@@ -3,6 +3,7 @@ import unittest
 from ticTacToeTask.char import Characters
 from ticTacToeTask.player import Player
 from ticTacToeTask.tictactoe import TicTacToe
+from ticTacToeTask.tictactoeexceptions import FullCellsException
 
 
 class MyTestCase(unittest.TestCase):
@@ -34,7 +35,25 @@ class MyTestCase(unittest.TestCase):
                                     ], self.my_game.get_board())
 
         self.my_game.make_move(1)
-        self.assertEqual(self.player2, self.my_game.get_current_player())
+        self.assertEqual(self.player1, self.my_game.get_current_player())
+
+    def test_that_a_player_cannot_play_in_a_cell_that_is_already_occupied(self):
+        self.player1 = Player("Abimbola", Characters.X.value)
+        self.player2 = Player("Femi", Characters.O.value)
+        self.my_game = TicTacToe(self.player1, self.player2)
+
+        self.assertListEqual([self.player1, self.player2], self.my_game.get_players())
+        self.assertListEqual([[' ', ' ', ' '],
+                              [' ', ' ', ' '],
+                              [' ', ' ', ' ']], self.my_game.get_board())
+
+        self.my_game.make_move(1)
+        self.assertEqual(self.player1, self.my_game.get_current_player())
+        self.my_game.make_move(2)
+        self.assertEqual(self.player1, self.my_game.get_current_player())
+        with self.assertRaises(FullCellsException):
+            self.my_game.make_move(2)
+
 
 
 

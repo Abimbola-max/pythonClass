@@ -5,4 +5,3 @@ class Characters(Enum):
 
     X = 'X'
     O = 'O'
-    EMPTY = ' '

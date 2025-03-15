@@ -35,6 +35,10 @@ class Player:
         if name in Player.existing_names:
             raise NameError("Name already taken.")
 
+        if not name.isalpha():
+            raise NameError("Name must contain only letters.")
+
+
     def increment_score(self):
         self.__score += 1
 
