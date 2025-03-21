@@ -22,8 +22,8 @@ class Main:
         match choice:
             case "1":
                 self.register_menu()
-            # case "2":
-            #     self.login_menu()
+            case "2":
+                self.login_menu()
             case "3":
                 self.exit_app()
             case _:
@@ -100,6 +100,124 @@ class Main:
         finally:
             self.main_menu()
 
+    def login_menu(self):
+        print("""
+                                   1 --> Login as a teacher
+                                   2 --> Login as a student
+                                   3 --> Exit
+                               """)
+        choice = input("Kindly enter any choice from the above: ")
+        if choice == "1":
+            self.login_teacher()
+        elif choice == "2":
+            self.login_student()
+        elif choice == "3":
+            self.exit_app()
+        else:
+            self.main_menu()
+
+    def login_teacher(self):
+        try:
+
+            email = input("Enter your email: ")
+            password = input("Enter your password: ")
+            teacher_login = Teacher()
+            current_teacher = teacher_login.login(email, password)
+            if current_teacher is not None:
+                print(f"You have successfully logged in")
+                self.teacher_menu()
+            else:
+
+                print("Invalid email or password")
+                self.login_teacher()
+        except InvalidNameLengthException as e:
+            print(f"Error {e}")
+        except InvalidNameException as e:
+            print(f"Error {e}")
+        except NullException as e:
+            print(f"Error {e}")
+        # finally:
+        #     self.main_menu()
+
+    def teacher_menu(self):
+        try:
+            print("""
+            1 -> Add course
+            2 -> View number of students registered
+            3 -> Grade student
+            4 -> Go back
+            5 -> logout
+             """)
+            choice = input("Kindly enter any choice from the above: ")
+
+            if choice == "1":
+                self.create_course()
+            # elif choice == '2':
+            #     self.view_number_of_student_registered()
+            # elif choice == '3':
+            #     self.grade_student()
+            elif choice == "4":
+                self.login_menu()
+            elif choice == '4':
+                print("logging out mf...")
+                self.main_menu()
+        except InvalidNameLengthException as e:
+            print(f"Error: {e}")
+
+    def login_student(self):
+        try:
+            email = input("Enter your email: ")
+            password = input("Enter your password: ")
+            student_login = Student()
+            current_student = student_login.login(email, password)
+            if current_student is not None:
+                print(f"You have successfully logged in")
+                self.student_menu()
+            else:
+                print("Invalid email or password")
+                self.login_student()
+        except InvalidNameLengthException as e:
+            print(f"Error {e}")
+        except InvalidNameException as e:
+            print(f"Error {e}")
+        except NullException as e:
+            print(f"Error {e}")
+
+    def student_menu(self):
+        print("""
+            1. View Courses
+            2. Enroll Course(s)
+            3. View grades
+            4. Logout
+            """)
+        choice = input("Kindly enter any choice from the above: ")
+        if choice == "1":
+            self.view_courses()
+        elif choice == "2":
+            self.view_enrolled_courses()
+        elif choice == "3":
+            self.view_grade()
+        elif choice == "4":
+            self.main_menu()
+        else:
+            self.main_menu()
+
+    def create_course(self):
+        try:
+            course_code = input("Enter course code: ")
+            course_title = input("Enter course title: ")
+            teacher_create = Teacher()
+            teacher_create.create_course(course_code, course_title)
+            print(f"You have created {course_code} successfully.")
+        except InvalidCourseCodeException as e:
+            print(f"Error {e}")
+        except InvalidCourseTitleException as e:
+            print(f"Error {e}")
+        except NullException as e:
+            print(f"Error {e}")
+        finally:
+            self.teacher_menu()
+
     @staticmethod
     def exit_app():
         print("Exiting App.")
@@ -110,6 +228,8 @@ class Main:
     def welcome() -> None:
         print("Welcome to GROUP 6 SCMS\n")
         print("The next page Displays And Help You With Your Choice ?\n")
+
+
 
 
 if __name__ == "__main__":

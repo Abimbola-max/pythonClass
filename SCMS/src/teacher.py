@@ -12,9 +12,10 @@ TEACHER_FILENAME = "teachers.txt"
 
 class Teacher(User):
 
-    def __init__(self, first_name, last_name, email, password):
+    def __init__(self, first_name="", last_name="", email="", password=""):
         super().__init__(first_name, last_name, email, password)
         self.is_logged_in = False
+
 
     def get_status(self):
         return self.is_logged_in
@@ -43,17 +44,14 @@ class Teacher(User):
         except ErrorRegistering as e:
             print(f"Error registering teacher: {e}")
 
+
     def login(self, email, password):
         teachers = read_from_files(TEACHER_FILENAME)
         for teacher in teachers:
-            if teacher.email == email:
-                if self.verify_password(password, teacher.password.encode("utf-8")):
-                    self.is_logged_in = True
-                    return teacher
-                else:
-                    self.is_logged_in = False
-                    return "Passwords do not match"
-
+            if teacher.email == email and self.verify_password(password, teacher.password):
+                self.is_logged_in = True
+                return teacher
+        self.is_logged_in = False
         return None
 
     @staticmethod

@@ -8,7 +8,11 @@ STUDENT_FILENAME = "Student.txt"
 
 class Student(User):
 
-    def __init__(self, first_name, last_name, email, password):
+    def __init__(self, first_name="", last_name=
+
+
+
+    "", email="", password=""):
         super().__init__(first_name, last_name, email, password)
         self.is_logged_in = False
         self.enrolled_courses = []
@@ -31,13 +35,11 @@ class Student(User):
     def login(self, email, password):
         students = read_from_files(STUDENT_FILENAME)
         for student in students:
-            if student.email == email:
-                if self.verify_password(password, student.password.encode("utf-8")):
-                    self.is_logged_in = True
-                    return student
-                else:
-                    self.is_logged_in = False
-                    return "Passwords do not match"
+            if student.email == email and self.verify_password(password, student.password):
+                self.is_logged_in = True
+                return student
+
+        self.is_logged_in = False
         return None
 
     def enroll_in_course(self, course_code):
