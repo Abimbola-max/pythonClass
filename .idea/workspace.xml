@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e81610a3-d2dd-4d2c-bd18-8dea1625c29e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/diaryapplication/vv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieRatingApp/exceptions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieRatingApp/exceptions/exception.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieRatingApp/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieRatingApp/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieRatingApp/src/movie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieRatingApp/src/movies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieRatingApp/src/validator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieRatingApp/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieRatingApp/tests/test_movie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieRatingApp/tests/test_movies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieTask/exceptions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieTask/exceptions/exception.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieTask/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieTask/src/movie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieTask/src/movies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieTask/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieTask/tests/test_movie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieTask/tests/test_movies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieTask/validator/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieTask/validator/validators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCMS/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/SCMS/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCMS/src/student.py" beforeDir="false" afterPath="$PROJECT_DIR$/SCMS/src/student.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCMS/src/teacher.py" beforeDir="false" afterPath="$PROJECT_DIR$/SCMS/src/teacher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,64 +31,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_movie.MyMovieTestCase.test_that_movie_can_add_rating.executor": "Run",
-    "Python tests.Python tests for test_movie.MyTestCase.test_that_movie_can_be_added.executor": "Run",
-    "Python tests.Python tests for test_movie.MyTestCase.test_that_movie_can_be_rated.executor": "Run",
-    "Python tests.Python tests for test_movie.MyTestCase.test_that_movie_title_field_being_empty_throws_exceptions.executor": "Run",
-    "Python tests.Python tests for test_movies.MyTestCase.test_that_average_rating_for_a_movie_is_gotten.executor": "Run",
-    "Python tests.Python tests for test_movies.MyTestCase.test_that_movie_can_be_added.executor": "Run",
-    "Python tests.Python tests for test_movies.MyTestCase.test_that_movie_can_be_rated.executor": "Run",
-    "Python tests.Python tests for test_multipleofnumbers.MyMultipleOfNumbersTestCase.executor": "Run",
-    "Python tests.Python tests for test_multipleofnumbers.MyMultipleOfNumbersTestCase.test_that_my_multiple_of_number_2.executor": "Run",
-    "Python tests.Python tests for test_player.MyPlayerTestCase.executor": "Run",
-    "Python tests.Python tests for test_player.MyPlayerTestCase.test_that_repetition_of_player_name_would_throw_error.executor": "Run",
-    "Python tests.Python tests for test_player.MyPlayerTestCase.test_that_two_players_can_exist.executor": "Run",
-    "Python tests.Python tests for test_stringmethods.MyStringTestCase.executor": "Run",
-    "Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_function_removes_any_special_characters_from_the_string.executor": "Run",
-    "Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_string_can_be_swapped_and_stripped.executor": "Run",
-    "Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_string_methods_can_count_occurrence.executor": "Run",
-    "Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_string_methods_can_count_occurrence_two.executor": "Run",
-    "Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_word_and_character_as_parameters_return_a_tuple.executor": "Run",
-    "Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_word_can_take_mixed_cases_and_return_words_arranged_in_mixed_cases.executor": "Run",
-    "Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_word_ce_can_be_added_to_the_middle_of_a_string.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyGameTestCase.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTestCase.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTestCase.test_that_a_player_can_not_play_in_a_cell_that_is_already_occupied.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTestCase.test_that_a_player_cannot_play_in_a_cell_that_is_already_occupied.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTestCase.test_that_creation_of_tic_tac_toe_game_with_2_player_is_valid.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTestCase.test_that_i_can_get_current_player.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTestCase.test_to_ensure_that_the_game_has_a_score_board_that_is_initialized_correctly_with_an_empty.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTestCase.test_to_ensure_that_the_game_has_a_score_board_that_is_initialized_correctly_with_an_empty_string.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_a_player_loses_the_game.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_a_player_wins_the_game.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_second_player_is_player_two_and_plays_o.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_there_is_draw_no_winner_or_loser.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_there_is_draw_o_winner_or_loser.executor": "Run",
-    "Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_tictactoe_game_is_created_and_players_more_than_two_throws_exceptions.executor": "Run",
-    "Python.board.executor": "Run",
-    "Python.claud.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.methods.executor": "Run",
-    "Python.multipleofnumbers.executor": "Run",
-    "Python.teacher.executor": "Run",
-    "Python.tictactoeapp.executor": "Run",
-    "Python.tictactoeexceptions.executor": "Run",
-    "Python.vv.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/DELL/Documents/pythonClass/SCMS/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_movie.MyMovieTestCase.test_that_movie_can_add_rating.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_movie.MyTestCase.test_that_movie_can_be_added.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_movie.MyTestCase.test_that_movie_can_be_rated.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_movie.MyTestCase.test_that_movie_title_field_being_empty_throws_exceptions.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_movies.MyTestCase.test_that_average_rating_for_a_movie_is_gotten.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_movies.MyTestCase.test_that_movie_can_be_added.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_movies.MyTestCase.test_that_movie_can_be_rated.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_multipleofnumbers.MyMultipleOfNumbersTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_multipleofnumbers.MyMultipleOfNumbersTestCase.test_that_my_multiple_of_number_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_player.MyPlayerTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_player.MyPlayerTestCase.test_that_repetition_of_player_name_would_throw_error.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_player.MyPlayerTestCase.test_that_two_players_can_exist.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_stringmethods.MyStringTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_function_removes_any_special_characters_from_the_string.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_string_can_be_swapped_and_stripped.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_string_methods_can_count_occurrence.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_string_methods_can_count_occurrence_two.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_word_and_character_as_parameters_return_a_tuple.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_word_can_take_mixed_cases_and_return_words_arranged_in_mixed_cases.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_stringmethods.MyStringTestCase.test_that_word_ce_can_be_added_to_the_middle_of_a_string.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyGameTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTestCase.test_that_a_player_can_not_play_in_a_cell_that_is_already_occupied.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTestCase.test_that_a_player_cannot_play_in_a_cell_that_is_already_occupied.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTestCase.test_that_creation_of_tic_tac_toe_game_with_2_player_is_valid.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTestCase.test_that_i_can_get_current_player.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTestCase.test_to_ensure_that_the_game_has_a_score_board_that_is_initialized_correctly_with_an_empty.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTestCase.test_to_ensure_that_the_game_has_a_score_board_that_is_initialized_correctly_with_an_empty_string.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_a_player_loses_the_game.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_a_player_wins_the_game.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_second_player_is_player_two_and_plays_o.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_there_is_draw_no_winner_or_loser.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_there_is_draw_o_winner_or_loser.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tictactoe.MyTicTacToeTestCase.test_that_tictactoe_game_is_created_and_players_more_than_two_throws_exceptions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.board.executor&quot;: &quot;Run&quot;,
+    &quot;Python.claud.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.methods.executor&quot;: &quot;Run&quot;,
+    &quot;Python.multipleofnumbers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.teacher.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tictactoeapp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tictactoeexceptions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vv.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bibi/Documents/pythonClass&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\DELL\Documents\pythonClass\SCMS\src" />
@@ -233,8 +209,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
-        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.26053.29" />
+        <option value="bundled-python-sdk-b1dbf8ef85a6-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.26053.29" />
       </set>
     </attachedChunks>
   </component>
@@ -260,6 +236,8 @@
       <workItem from="1742004829018" duration="18306000" />
       <workItem from="1742056467247" duration="2240000" />
       <workItem from="1742200581772" duration="30857000" />
+      <workItem from="1742592068712" duration="787000" />
+      <workItem from="1742626606882" duration="11000" />
     </task>
     <servers />
   </component>
